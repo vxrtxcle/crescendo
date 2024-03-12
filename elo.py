@@ -8,6 +8,11 @@ import json
 import operator
 import networkx as nx
 import sympy as sp
+import os
+from dotenv import load_dotenv
+load_dotenv()
+tba_key = os.getenv('X_TBA_Auth_Key')
+
 class node:
     def __init__(self, team):
         self.team = team
@@ -125,7 +130,7 @@ def initialize_teams_and_epas(event):
     epas = []
     print("Initializing teams and epas")
     url = "https://www.thebluealliance.com/api/v3/event/" + event + "/teams/keys"
-    headers = {'X-TBA-Auth-Key': 'KqHzvTvB43y2kiX9T86zL4xxQiY63yJ5pnzzFQPlHvRdspj1M2PtiVSpYVuUgKBw'}
+    headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)
     req = response.json()
     team_elo = []
@@ -148,7 +153,7 @@ def match_difficulty():
     #x = input("Which team? ")
     y = input("Which event? ")
     url = "https://www.thebluealliance.com/api/v3/event/" + y + "/matches/keys"
-    headers = {'X-TBA-Auth-Key': 'KqHzvTvB43y2kiX9T86zL4xxQiY63yJ5pnzzFQPlHvRdspj1M2PtiVSpYVuUgKBw'}
+    headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)
     req = response.json()
     match_keys = []
@@ -212,7 +217,7 @@ def actual_skill():
     y = input("Write the Event Code: ")
     string1 = ""
     url = "https://www.thebluealliance.com/api/v3/event/" + y + "/rankings"
-    headers = {'X-TBA-Auth-Key': 'KqHzvTvB43y2kiX9T86zL4xxQiY63yJ5pnzzFQPlHvRdspj1M2PtiVSpYVuUgKBw'}
+    headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)
     req = response.json()
     for x in req.get('rankings'):
@@ -355,7 +360,7 @@ def generate_json():
     teams = []
     y = input("Which event? ")
     url = "https://www.thebluealliance.com/api/v3/event/" + y + "/teams/keys"
-    headers = {'X-TBA-Auth-Key': 'KqHzvTvB43y2kiX9T86zL4xxQiY63yJ5pnzzFQPlHvRdspj1M2PtiVSpYVuUgKBw'}
+    headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)
     req = response.json()
     for j in req:
@@ -480,7 +485,7 @@ def elo_match_calculations():
         epas.append(y[1])
     print(epas)
     url = "https://www.thebluealliance.com/api/v3/event/" + x + "/matches/keys"
-    headers = {'X-TBA-Auth-Key': 'KqHzvTvB43y2kiX9T86zL4xxQiY63yJ5pnzzFQPlHvRdspj1M2PtiVSpYVuUgKBw'}
+    headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)
     req = response.json()
     for y in req:
@@ -523,7 +528,7 @@ def elo_match_calculations():
 def stand_dev():
     #x = input('Write the event code: ')
     url = "https://www.thebluealliance.com/api/v3/event/2024isde1/matches/simple"
-    headers = {'X-TBA-Auth-Key': 'KqHzvTvB43y2kiX9T86zL4xxQiY63yJ5pnzzFQPlHvRdspj1M2PtiVSpYVuUgKBw'}
+    headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)
     req = response.json()
     total = 0
@@ -554,7 +559,7 @@ def stand_dev():
 
 def auto_paths():
     url = "https://www.thebluealliance.com/api/v3/event/2024week0/matches"
-    headers = {'X-TBA-Auth-Key': 'KqHzvTvB43y2kiX9T86zL4xxQiY63yJ5pnzzFQPlHvRdspj1M2PtiVSpYVuUgKBw'}
+    headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)
     req = response.json()
     for x in req:
@@ -742,7 +747,7 @@ def convert_rld_to_tpw():
 
 def qualitative_assignment():
     url = "https://www.thebluealliance.com/api/v3/event/2024txwac/teams/keys"
-    headers = {'X-TBA-Auth-Key': 'KqHzvTvB43y2kiX9T86zL4xxQiY63yJ5pnzzFQPlHvRdspj1M2PtiVSpYVuUgKBw'}
+    headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)
     req = response.json()
     teams = []
@@ -755,7 +760,7 @@ def qualitative_assignment():
 #actual_skill()
 #raw_skill('2024txwac')
 #match_difficulty()
-generate_json()
+qualitative_assignment()
 '''
 {
 	"entries": [

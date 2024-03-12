@@ -60,7 +60,7 @@ def generate_json():
     teams = []
     y = input("Which event? ")
     url = "https://www.thebluealliance.com/api/v3/event/" + y + "/teams/keys"
-    headers = {'X-TBA-Auth-Key': 'KqHzvTvB43y2kiX9T86zL4xxQiY63yJ5pnzzFQPlHvRdspj1M2PtiVSpYVuUgKBw'}
+    headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)
     req = response.json()
     for j in req:
@@ -178,7 +178,7 @@ def elo_match_calculations():
     x = input("Write the event code: ")
     teams = initialize_teams_and_epas(x)
     url = "https://www.thebluealliance.com/api/v3/event/" + x + "/matches/keys"
-    headers = {'X-TBA-Auth-Key': 'KqHzvTvB43y2kiX9T86zL4xxQiY63yJ5pnzzFQPlHvRdspj1M2PtiVSpYVuUgKBw'}
+    headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)
     req = response.json()
     for y in req:

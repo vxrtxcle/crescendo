@@ -3,8 +3,11 @@ import json
 import pandas as pd
 import streamlit as st
 import requests
+from dotenv import load_dotenv
+import os
+load_dotenv()
 from googleapiclient.discovery import build
-
+access_env = os.getenv('access_token')
 df = pd.read_csv('photos.csv')
 image_column_name = "Photo (clear view; no people blocking please)"
 team_numbers = df["Team Number"].unique().tolist()
@@ -15,13 +18,13 @@ filtered_df = df[df["Team Number"] == selected_team_number]
 
 if selected_team_number:
     image_link = filtered_df[image_column_name].values[0]
-access_token = 'AIzaSyAsHpcQUoCWw2xMhKd56-VWSRXyBvU-Ktg'
+
 if ',' in image_link:
     file_ids = image_link.split(', ')
     for x in file_ids:
         y = x.split('=')
         print(y[1])
-        download_url = f"https://www.googleapis.com/drive/v3/files/{y[1]}?alt=media&access_token={access_token}"
+        download_url = f"https://www.googleapis.com/drive/v3/files/{y[1]}?alt=media&access_token={access_env}"
         image_response = requests.get(download_url)
         if image_response.status_code == 200:
             st.image(image_response.content, width=600)
@@ -30,7 +33,7 @@ if ',' in image_link:
 else:
     file_id = image_link.split('=')
     print(file_id[1])
-    download_url = f"https://www.googleapis.com/drive/v3/files/{file_id[1]}?alt=media&access_token={access_token}"
+    download_url = f"https://www.googleapis.com/drive/v3/files/{file_id[1]}?alt=media&access_token={access_env}"
     image_response = requests.get(download_url)
     if image_response.status_code == 200:
         st.image(image_response.content, width=600)

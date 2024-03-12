@@ -39,7 +39,7 @@ for item in list(df['team_#']):
       seen.add(item)
       unique_data.append(item)
 url = "https://www.thebluealliance.com/api/v3/event/2024txwac/teams/keys"
-headers = {'X-TBA-Auth-Key': 'KqHzvTvB43y2kiX9T86zL4xxQiY63yJ5pnzzFQPlHvRdspj1M2PtiVSpYVuUgKBw'}
+headers = {'X-TBA-Auth-Key': tba_key}
 response = requests.get(url, headers)
 req = response.json()
 teams = []
