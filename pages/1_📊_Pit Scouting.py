@@ -5,8 +5,8 @@ from pathlib import Path
 
 pit_data_path = Path(__file__).parents[1] / 'pit.csv'
 data_path = Path(__file__).parents[1] / "Data Set.csv"
-pit_data = pd.read_csv(pit_data_path)
-dataset_data = pd.read_csv(data_path)
+pit_data = pd.read_csv('pit.csv')
+dataset_data = pd.read_csv('Data Set.csv')
 team_number = st.selectbox("Select Team", pit_data["Team Number"].unique(), format_func=lambda x: f"{x}")
 filtered_data = dataset_data[dataset_data["team_#"] == team_number]
 
