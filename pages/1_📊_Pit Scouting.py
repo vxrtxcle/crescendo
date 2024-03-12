@@ -31,6 +31,7 @@ st.table(filtered_pit_data[['Can they score in trap?', 'Can they get onstage?']]
 st.write("Comments")
 st.table(filtered_pit_data[['Final Comments', 'Comments (about auto)', 'Comments?']])
 access_env = os.getenv('access_token')
+print(access_env)
 df = pd.read_csv('photos.csv')
 image_column_name = "Photo (clear view; no people blocking please)"
 
@@ -52,7 +53,7 @@ if ',' in image_link:
             st.error(f"Error downloading image: {image_response.status_code}")
 else:
     file_id = image_link.split('=')
-    print(file_id[1])
+    print(file_id)
     download_url = f"https://www.googleapis.com/drive/v3/files/{file_id[1]}?alt=media&access_token={access_env}"
     image_response = requests.get(download_url)
     if image_response.status_code == 200:
