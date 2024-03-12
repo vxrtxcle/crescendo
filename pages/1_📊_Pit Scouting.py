@@ -1,24 +1,15 @@
 import streamlit as st
 import pandas as pd
 import requests
-pit_data = pd.read_csv("pit.csv")
-dataset_data = pd.read_csv("Data Set.csv")
-team_number = st.sidebar.selectbox("Select Team", pit_data["Team Number"].unique(), format_func=lambda x: f"{x}")
+pit_data = pd.read_csv("../pit.csv")
+dataset_data = pd.read_csv("../Data Set.csv")
+team_number = st.selectbox("Select Team", pit_data["Team Number"].unique(), format_func=lambda x: f"{x}")
 filtered_data = dataset_data[dataset_data["team_#"] == team_number]
 
 if filtered_data.empty:
     st.write("")
 else:
     st.write(filtered_data.to_string(index=False))
-
-
-
-# Update title based on selection
-
-# Display general team information (from pit.csv)
-filtered_pit_data = pit_data[pit_data["Team Number"] == team_number]
-pit_data = pd.read_csv('/pit.csv')
-
 
 st.subheader("Pit Scouting")
 filtered_pit_data = pit_data[pit_data["Team Number"] == team_number]  # Placeholder for team selection, adapt if needed
