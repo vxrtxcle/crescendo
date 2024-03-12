@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 import requests
-pit_data = pd.read_csv("/pit.csv")
-dataset_data = pd.read_csv("/Data Set.csv")
+pit_data = pd.read_csv("../pit.csv")
+dataset_data = pd.read_csv("../Data Set.csv")
 team_number = st.sidebar.selectbox("Select Team", pit_data["Team Number"].unique(), format_func=lambda x: f"{x}")
 filtered_data = dataset_data[dataset_data["team_#"] == team_number]
 
