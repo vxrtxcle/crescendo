@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 from pathlib import Path
+import os
 
 pit_data_path = Path(__file__).parents[1] / 'pit.csv'
 data_path = Path(__file__).parents[1] / "Data Set.csv"
@@ -29,4 +30,33 @@ st.write("Abilities")
 st.table(filtered_pit_data[['Can they score in trap?', 'Can they get onstage?']])
 st.write("Comments")
 st.table(filtered_pit_data[['Final Comments', 'Comments (about auto)', 'Comments?']])
+access_env = os.getenv('access_token')
+df = pd.read_csv('photos.csv')
+image_column_name = "Photo (clear view; no people blocking please)"
+
+filtered_df = df[df["Team Number"] == team_number]
+
+if team_number:
+    image_link = filtered_df[image_column_name].values[0]
+
+if ',' in image_link:
+    file_ids = image_link.split(', ')
+    for x in file_ids:
+        y = x.split('=')
+        print(y[1])
+        download_url = f"https://www.googleapis.com/drive/v3/files/{y[1]}?alt=media&access_token={access_env}"
+        image_response = requests.get(download_url)
+        if image_response.status_code == 200:
+            st.image(image_response.content, width=600)
+        else:
+            st.error(f"Error downloading image: {image_response.status_code}")
+else:
+    file_id = image_link.split('=')
+    print(file_id[1])
+    download_url = f"https://www.googleapis.com/drive/v3/files/{file_id[1]}?alt=media&access_token={access_env}"
+    image_response = requests.get(download_url)
+    if image_response.status_code == 200:
+        st.image(image_response.content, width=600)
+    else:
+        st.error(f"Error downloading image: {image_response.status_code}")
 
