@@ -20,6 +20,7 @@ authorization_url = "https://accounts.google.com/o/oauth2/auth?" + urlencode({
 # Redirect the user to the authorization URL
 print("Visit the following URL to authorize your application:")
 print(authorization_url)
+# https://crescendofrc2468.streamlit.app/Pit_Scouting?code=4/0AeaYSHCqsmGkIgFYgtKJuqD4VEZQtdgf6X3F3tQavTibLOfm0eTHeLAL0HcBVIbVBDIhfw&scope=https://www.googleapis.com/auth/drive
 '''
 # 4/0AeaYSHCqsmGkIgFYgtKJuqD4VEZQtdgf6X3F3tQavTibLOfm0eTHeLAL0HcBVIbVBDIhfw
 import requests

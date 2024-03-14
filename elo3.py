@@ -237,7 +237,7 @@ def weighed_graph():
             print("No edges")
             return None
         for u,v in G.out_edges(node):
-            temp = R(currTeam.team, B, v, G, seen_nodes, seen)
+            temp = R(u.team, v.team, v, G, seen_nodes, seen)
             found.append({'prob': temp['prob'] * G[u][v]['weight'], 'dist': temp['dist'] + 1})
         lowest = None
         if len(found) == 0:
@@ -265,6 +265,21 @@ def find_matching_dictionary(data, target_value):
                 return item
             elif isinstance(value, str) and value.isdigit() and int(value) == target_value:
                 return item
+def convert():
+    with open("driverratings.json", "r") as f:
+        x = json.load(f)
+        count = 0
+        t1 = 0
+        t2 = 0
+        t3 = 0
+        r1 = 0
+        r2 = 0
+        r3 = 0
+        #for y in range(0,len(x)):
+         #   if x['']
+
+
+
 
 
 
