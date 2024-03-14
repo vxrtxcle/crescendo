@@ -39,25 +39,5 @@ filtered_df = df[df["Team Number"] == team_number]
 
 if team_number:
     image_link = filtered_df[image_column_name].values[0]
-
-if ',' in image_link:
-    file_ids = image_link.split(', ')
-    for x in file_ids:
-        y = x.split('=')
-        print(y[1])
-        download_url = f"https://www.googleapis.com/drive/v3/files/{y[1]}?alt=media&access_token={access_env}"
-        image_response = requests.get(download_url)
-        if image_response.status_code == 200:
-            st.image(image_response.content, width=600)
-        else:
-            st.error(f"Error downloading image: {image_response.status_code}")
-else:
-    file_id = image_link.split('=')
-    print(file_id)
-    download_url = f"https://www.googleapis.com/drive/v3/files/{file_id[1]}?alt=media&access_token={access_env}"
-    image_response = requests.get(download_url)
-    if image_response.status_code == 200:
-        st.image(image_response.content, width=600)
-    else:
-        st.error(f"Error downloading image: {image_response.status_code}")
+    st.markdown("[View image of robot](" + image_link + ")")
 
