@@ -1,4 +1,3 @@
-import statbotics
 import requests
 import json
 import streamlit as st
@@ -6,7 +5,6 @@ import os
 from pathlib import Path
 import pandas as pd
 import statbotics as stb
-sb = statbotics.Statbotics()
 st.subheader("Statbotics")
 pit_data_path = Path(__file__).parents[1] / 'pit.csv'
 print(pit_data_path)
