@@ -215,14 +215,20 @@ def weighed_graph():
     print(G)
     currTeam = find_node_by_team(seen_nodes,2468)
 
-    def R(A, B, currTeam, G, seen_nodes):
+    def R(A, B, currTeam, G, seen_nodes, seen):
         node = G[currTeam]
+        seen.append(node)
         print(A)
         print(B)
         print(currTeam)
         # print(G.has_node(currTeam))
         if G.has_edge(find_node_by_team(seen_nodes, A), find_node_by_team(seen_nodes, B)):
-            weight = G.edges[node(A), node(B)]['weight']
+            edge_data = G.get_edge_data(find_node_by_team(seen_nodes, A),find_node_by_team(seen_nodes, B))
+            if edge_data is not None:
+                edge_weight = edge_data['weight']
+                print("Weight of edge (A, B) is:", edge_weight)
+            else:
+                print("Edge (A, B) does not exist in the graph.")
             return {'prob': weight, 'dist': 1}
         found = []
         # print(node)
@@ -230,22 +236,22 @@ def weighed_graph():
         if len(G.out_edges(node)) == 0:
             print("No edges")
             return None
-        for edge in G.out_edges(node):
-            temp = R(currTeam.team, B, edge[1], G, seen_nodes)
-            found.append({'prob': temp.weight * edge.weight, 'dist': temp.dist + 1})
+        for u,v in G.out_edges(node):
+            temp = R(currTeam.team, B, v, G, seen_nodes, seen)
+            found.append({'prob': temp['prob'] * G[u][v]['weight'], 'dist': temp['dist'] + 1})
         lowest = None
         if len(found) == 0:
             print("No found")
             return lowest
+        print(len(found))
+        lowest = found[0]['dist']
         for x in found:
             temp = x['dist']
             if temp < lowest:
                 lowest = temp
-            else:
-                continue
-        if lowest != None:
-            return find_matching_dictionary(found, lowest)
-    print(R(2468, 3310, currTeam, G, seen_nodes))
+        return {'prob': weight, 'dist': lowest}
+
+    print(R(2468, 3310, currTeam, G, seen_nodes, []))
 #def ask_questions(G):
 
 weighed_graph()

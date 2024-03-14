@@ -7,6 +7,7 @@ import random
 import json
 import operator
 import networkx as nx
+'''
 sb = statbotics.Statbotics()
 y = sb.get_team_event(2468,'2024txwac')
 print("Team Event")
@@ -192,4 +193,3 @@ def elo_match_calculations():
 elo_match_calculations()
 #for x in generate_better_than_list():
  #   print(x)
- '''

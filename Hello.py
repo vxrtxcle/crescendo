@@ -84,3 +84,4 @@ import streamlit as st
 st.title("Team Dashboard")
 st.write("Hello, welcome to the team dashboard!")
 st.write("Select a team on the sidebar and travel throughout the pages to get started!")
+st.sidebar.selectbox("Select a team: ")
