@@ -1,5 +1,3 @@
-import statbotics
-import statbotics as sb
 import streamlit as st
 import os
 from pathlib import Path
