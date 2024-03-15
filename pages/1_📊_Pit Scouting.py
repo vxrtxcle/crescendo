@@ -11,41 +11,32 @@ data_path = Path(__file__).parents[1] / "Data Set.csv"
 pit_data = pd.read_csv('pit.csv')
 pit_ftw_data = pd.read_csv('pit-fort-worth.csv')
 dataset_data = pd.read_csv('Data Set.csv')
-tournament = st.selectbox("Select a tournament", ['Fort Worth', 'Waco'])
-if tournament:
-    if tournament == 'Waco':
-        team_number = st.selectbox("Select Team", pit_data["Team Number"].unique(), format_func=lambda x: f"{x}")
-    else:
-        team_number = st.selectbox("Select Team", pit_ftw_data["Team Number"].unique(), format_func=lambda x: f"{x}")
 
+y = pit_ftw_data["Team Number (of the team you're scouting)"].unique()
 
-filtered_data = dataset_data[dataset_data["team_#"] == team_number]
+team_number = st.selectbox("Select Team", y, format_func=lambda x: f"{x}")
+image_column_name = "Photo (clear view; no people blocking please; MAKE SURE THE ROBOT MATCHES WITH THE NUMBER YOU PUT ABOVE)"
 
-if filtered_data.empty:
-    st.write("")
-else:
-    st.write(filtered_data.to_string(index=False))
 
 st.subheader("Pit Scouting")
-filtered_pit_data = pit_data[pit_data["Team Number"] == team_number]  # Placeholder for team selection, adapt if needed
+filtered_pit_data = pit_ftw_data[pit_ftw_data["Team Number (of the team you're scouting)"] == team_number]  # Placeholder for team selection, adapt if needed
 st.write("General")
-st.table(filtered_pit_data[["Height (in)", "Width (in)",
-                                "Drivebase", "Programming Language", "Camera Usage?",
-                                'Over/Under Bumper Ground Pickup', 'Over-Bumper or Under-Bumper Ground Pickup']])
+st.table(filtered_pit_data[["Height (from the ground) (in)", "Width (in respect to climb; without bumpers) (in)",
+                                "Drivebase", "Programming Language", "Camera Usage? (to assist drivers)",
+                                'Over/Under Bumper Ground Pickup']])
 st.write("Auto")
-st.table(filtered_pit_data[["Leave Zone", "Scoring Ability", ]])
+st.table(filtered_pit_data[["Leave Zone Auto?", "Scoring Ability (in auto)"]])
 st.write("TeleOP")
-st.table(filtered_pit_data[["Scoring Preference", "Pickup Ability", 'Pickup Preference']])
+st.table(filtered_pit_data[["Scoring Preference (in teleop)","Scoring Ability (in teleop)","Pickup Ability", 'Pickup Preference']])
 st.write("Abilities")
-st.table(filtered_pit_data[['Can they score in trap?', 'Can they get onstage?']])
+st.table(filtered_pit_data[['Can they score in trap?', 'Can they get onstage (hang)?']])
 st.write("Comments")
 st.table(filtered_pit_data[['Final Comments', 'Comments (about auto)', 'Comments?']])
-access_env = os.getenv('access_token')
-print(access_env)
-df = pd.read_csv('photos.csv')
-image_column_name = "Photo (clear view; no people blocking please)"
 
-filtered_df = df[df["Team Number"] == team_number]
+df = pd.read_csv('pit-photos-fort-worth.csv')
+image_column_name = "Photo (clear view; no people blocking please; MAKE SURE THE ROBOT MATCHES WITH THE NUMBER YOU PUT ABOVE)"
+
+filtered_df = df[df["Team Number (OF THE TEAM YOU'RE TAKING THE PICTURE OF)"] == team_number]
 
 if team_number:
     image_link = filtered_df[image_column_name].values[0]
