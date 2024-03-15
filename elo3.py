@@ -22,10 +22,21 @@ class node:
             self.list.append(x)
     def add_rating(self, item):
         self.rating_array.append(item)
+    '''
+'''
+    def remove_duplicates(self):
+        unique_list = []
+        seen_ids = set()
+        for obj in self.list:
+            if obj.team not in seen_ids:
+                unique_list.append(obj)
+                seen_ids.add(obj.team)
+        self.list = unique_list
+
     def check_list(self):
         team = self.team
         for x in self.list:
-            if team == x.team:
+            if int(team) == int(x.team):
                 self.list.remove(x)
     def find_average_rating(self):
         self.average_rating = sum(self.rating_array) / len(self.rating_array)
@@ -76,7 +87,7 @@ class node:
         team = self.team
         with open('match2.json') as f:
             x = json.load(f)
-            for y in range(1, 301):
+            for y in range(1, 101):
                 z = "match" + str(y)
                 if int(x['matches'][z]["t1"]) == team:
 
@@ -125,10 +136,11 @@ def find_teams_worse(teams, team):
     return list
 
 def generate_better_than_list():
+
     node_list = []
     with open("match2.json", "r") as f:
         x = json.load(f)
-        for y in range(1,101):
+        for y in range(1,301):
             b = "match" + str(y)
             for z in range(1,4):
                 c = "t" + str(z)
@@ -137,28 +149,30 @@ def generate_better_than_list():
                 node_list.append(a)
     return node_list
 def find_duplicates(data_list):
+    seen = {}
+    for x in data_list:
+        try:
+            if seen[x.team] == None:
+                seen[x.team] = 1
+            else:
+                seen[x.team] += 1
+        except:
+            seen[x.team] = 1
+    return seen
+def check_sublist_presence(larger_list, value_1, value_2):
+    for sublist in larger_list:
+        if len(sublist) == 3 and sublist[0] == value_1 and sublist[1] == value_2:
+            #print(sublist)
+            return True
+    return False
 
-  counts = Counter(data_list)
-
-  duplicates = {item: count for item, count in counts.items() if count > 1}
-
-  return duplicates
-def check_sublist_presence(larger_list, sublist):
-
-
-  # Use list comprehension for efficient comparison
-  return any(sublist[:2] == inner_list[:2] for inner_list in larger_list)
-
-def find_third_value(larger_list, target_sublist):
-
-
-  for inner_list in larger_list:
-    if inner_list[:2] == target_sublist:
-      if len(inner_list) >= 3:
-        return inner_list[2]
-      else:
-        return None
-  return None
+def find_third_value(larger_list, value_1, value_2):
+    for sublist in larger_list:
+        if len(sublist) == 3 and sublist[0] == value_1 and sublist[1] == value_2:
+            #print(sublist)
+            #print("Weight: " + str(sublist[2]))
+            return sublist[2]
+    return 0
 def find_node_by_team(nodes, target_team):
   for node in nodes:
     if node.team == target_team:
@@ -168,6 +182,8 @@ def find_node_by_team(nodes, target_team):
 
 def weighed_graph():
     y = generate_better_than_list()
+    #for z in y:
+        #print(z)
     G = nx.DiGraph()
     seen_teams = []
     seen_nodes = []
@@ -180,27 +196,50 @@ def weighed_graph():
         seen_nodes.append(node)
         outperformed_teams = node.list
         dupes = find_duplicates(node.list)
+        #print(node.team)
+        #print(dupes)
+        seen = []
         for outperformed_team in outperformed_teams:
+            if outperformed_team.team in seen:
+                continue
+            elif int(outperformed_team.team) == int(node.team):
+                continue
+            else:
+                seen.append(outperformed_team.team)
 
-            if outperformed_team in dupes:
+        outperformed_teams = seen
+        #print("Team: " + str(node.team))
+        #for x in dupes:
+            #print(x + " : " + str(dupes[x]))
+        for outperformed_team in outperformed_teams:
+            if dupes[outperformed_team] != None:
                 # amount of times team outranked other team
                 temp1 = dupes[outperformed_team]
-                if [node, outperformed_team, temp1] in edge_list:
+                #print(temp1)
+                if [node, int(outperformed_team), temp1] in edge_list:
                     continue
-                edge_list.append([int(node.team), int(outperformed_team.team), temp1])
+                edge_list.append([int(node.team), int(outperformed_team), temp1])
             else:
-                edge_list.append([int(node.team), int(outperformed_team.team), 1])
+                edge_list.append([int(node.team), int(outperformed_team), 1])
     for x in seen_nodes:
         G.add_node(x)
+    #print(edge_list)
+    #print("x")
     for edge in edge_list:
         if G.has_edge(find_node_by_team(seen_nodes,edge[0]), find_node_by_team(seen_nodes,edge[1])):
             continue
+            #print("z")
         else:
-            if check_sublist_presence(edge_list, [edge[1], edge[0]]):
-                #print("hi")
-                weight = find_third_value(edge_list, [edge[0],edge[1]])
-                other_weight = find_third_value(edge_list, [edge[1],edge[0]])
-                total = find_third_value(edge_list, [edge[0],edge[1]]) + find_third_value(edge_list, [edge[1],edge[0]])
+           # print("y")
+            if check_sublist_presence(edge_list, edge[0], edge[1]):
+                #print("z")
+                weight = find_third_value(edge_list,edge[0],edge[1])
+                #print(weight)
+                other_weight = find_third_value(edge_list,edge[1],edge[0])
+                #print(other_weight)
+                total = find_third_value(edge_list, edge[0],edge[1]) + find_third_value(edge_list, edge[1],edge[0])
+                #print("Node 1: " + str(edge[0]) + ", Node 2: " + str(edge[1]) + ", Weight: " + str(weight/total))
+                #print(edge_list)
                 G.add_edge(find_node_by_team(seen_nodes,edge[0]),find_node_by_team(seen_nodes,edge[1]),weight=weight/total)
                 G.add_edge(find_node_by_team(seen_nodes,edge[1]),find_node_by_team(seen_nodes,edge[0]),weight=other_weight/total)
 
@@ -212,47 +251,76 @@ def weighed_graph():
             remove.append(x[0])
     for x in range(len(remove)):
         G.remove_edge(remove[x],remove[x])
-    print(G)
-    currTeam = find_node_by_team(seen_nodes,2468)
+    #for u,v in G.edges:
+        #print(u)
+        #print(v)
+        #print(G.get_edge_data(u,v))
+    for x in seen_nodes:
+        x.remove_duplicates()
+        x.check_list()
+        #print(x.team)
+        #for y in x.list:
+            #print(y)
+
 
     def R(A, B, currTeam, G, seen_nodes, seen):
-        node = G[currTeam]
-        seen.append(node)
-        print(A)
-        print(B)
-        print(currTeam)
-        # print(G.has_node(currTeam))
+        # 1st check if there exists an edge between A and B
         if G.has_edge(find_node_by_team(seen_nodes, A), find_node_by_team(seen_nodes, B)):
             edge_data = G.get_edge_data(find_node_by_team(seen_nodes, A),find_node_by_team(seen_nodes, B))
-            if edge_data is not None:
-                edge_weight = edge_data['weight']
-                print("Weight of edge (A, B) is:", edge_weight)
-            else:
-                print("Edge (A, B) does not exist in the graph.")
-            return {'prob': weight, 'dist': 1}
+            edge_weight = edge_data['weight']
+            return {'prob': edge_weight, 'dist': 1}
         found = []
-        # print(node)
-        # print(G.out_edges(node))
-        if len(G.out_edges(node)) == 0:
+        if len(G.out_edges(currTeam)) == 0:
             print("No edges")
             return None
-        for u,v in G.out_edges(node):
-            temp = R(u.team, v.team, v, G, seen_nodes, seen)
+        print("Team: " + str(currTeam.team))
+        for u,v in G.out_edges(currTeam):
+            print("Node 1: " + str(u.team))
+            print("Node 2: " + str(v.team))
+            seen.append(currTeam.team)
+            if v.team == B:
+                return {'prob': G[u][v]['weight'], 'dist': 1}
+            if len(seen) > 4:
+                #print("Maximum depth reached")
+                continue
+            temp = R(A, B, v, G, seen_nodes, seen)
             found.append({'prob': temp['prob'] * G[u][v]['weight'], 'dist': temp['dist'] + 1})
         lowest = None
         if len(found) == 0:
             print("No found")
             return lowest
-        print(len(found))
+        #print(len(found))
         lowest = found[0]['dist']
-        for x in found:
-            temp = x['dist']
+        edge_weight = found[0]['prob']
+        for x in range(len(found)):
+            temp = found[x]['dist']
+            temp2 = found[x]['prob']
             if temp < lowest:
                 lowest = temp
-        return {'prob': weight, 'dist': lowest}
+                edge_weight = found[x]['prob']
+            if temp2 > edge_weight:
+                edge_weight = temp2
 
-    print(R(2468, 3310, currTeam, G, seen_nodes, []))
-#def ask_questions(G):
+        return {'prob': edge_weight, 'dist': lowest}
+
+
+    #print(G.has_edge(find_node_by_team(seen_nodes, 3310),find_node_by_team(seen_nodes, 3743)))
+    #for x in seen_nodes:
+        #print(x)
+    A = input("What team are you comparing 1st? ")
+    B = input("What team are you comparing 2nd? ")
+    print(int(A))
+    print(int(B))
+    currTeam = find_node_by_team(seen_nodes, int(A))
+    '''for x,y in G.edges:
+        if x.team == 9105:
+            print(str(x.team) + " -> " + str(y.team) + " Probability: " + str(G[x][y]['weight']))
+        if y.team == 2687:
+            print(str(x.team) + " -> " + str(y.team) + " Probability: " + str(G[x][y]['weight']))'''
+    print(str(A) + " is better than " + str(B) + " about " + str(R(int(A), int(B), currTeam, G, seen_nodes, [])['prob'] * 100) + "% of the time, and has a distance of " + str(R(int(A), int(B), currTeam, G, seen_nodes, [])['dist']))
+    #for x in find_node_by_team(seen_nodes,3310).list:
+        #print(x)
+#3310 9088 9156 2468 3005 7492 2582 8512 418 7321 9407 9714 7534 9752 7271 4251 7506 4206 9492 8842 7503 5411
 
 weighed_graph()
 #turn it into nodes

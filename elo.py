@@ -746,14 +746,28 @@ def convert_rld_to_tpw():
      #   file_data
 
 def qualitative_assignment():
-    url = "https://www.thebluealliance.com/api/v3/event/2024txwac/teams/keys"
+    url = "https://www.thebluealliance.com/api/v3/event/2024txfor/teams/keys"
     headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)
     req = response.json()
     teams = []
+    teams2 = []
     for x in req:
         y = x.replace('frc', '')
-        print(y)
+        teams.append(int(y))
+    url = "https://www.thebluealliance.com/api/v3/event/2024txwac/teams/keys"
+    response = requests.get(url,headers)
+    req = response.json()
+    common = []
+    for z in req:
+        a = z.replace('frc', '')
+        teams2.append(int(a))
+    for x in teams:
+        for y in teams2:
+            if x == y:
+                common.append(x)
+    print(common)
+
     #print(teams)
 
 

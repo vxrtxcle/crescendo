@@ -1,0 +1,30 @@
+Timestamp,Team Number (of the team you're scouting),Team Name (same idea as above),Height (from the ground) (in),Width (in respect to climb; without bumpers) (in),Drivebase,Vibe Check! (of robot not people),Over/Under Bumper Ground Pickup,Comments?,Programming Language,Scoring Ability (in auto),Leave Zone Auto?,Comments (about auto),Camera Usage? (to assist drivers),Scoring Ability (in teleop),Scoring Preference (in teleop),Pickup Ability,Pickup Preference,Can they score in trap?,Can they get onstage (hang)?,Final Comments
+3/14/2024 19:06:12,9105,Technotalons,26 inches,29.5 inches,Swerve,3,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Both,Ground,No,Yes,
+3/14/2024 19:08:54,7540,Timberwolves,34,29,Swerve,3,Under-Bumper,,Java,Speaker,No,Use pathfinder,Yes,Both,Speaker,Ground,Ground,No,Sometimes,
+3/14/2024 19:11:09,8088,Bionic Panthers,26.5,26.5,Swerve,3,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+3/14/2024 19:11:40,9407,Heatwave robotics,15 inches,28 inches,Swerve,4,Over-Bumper,"With intake out 33 inches, double crack in a two stage format ",Java,Speaker,Yes,,Yes,Both but amp not tested ,Speaker,Both,None,No,No,
+3/14/2024 19:15:03,9492,LadyTalons,26 inches,25 inches,Swerve,5,Under-Bumper,Extended bumper,Java,Speaker,No,,No,Both,Speaker,Both,None only practiced with source however,No,Yes,
+3/14/2024 19:17:12,8512,Manzano monarchs,44.5,27.5,Tank,1,No Ground Pickup,Cardboard :/,Java,None- working on amp,No,,Yes,Both,Amp,Source,Source,No,No,Mentor heavy and robot does not look robust at all
+3/14/2024 19:21:31,9156,Blacksmiths of Troy,20 inchss,30 inchsz,Tank,4,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Can only do ground,No,Yes,
+3/14/2024 19:22:37,9081,Bluetonium,19 inches,29.5,Swerve,2,Over-Bumper,Can go under stage,Java,Working on speaker ,Yes,,No,Amp and sometimes speaker,Amp,Both,Ground,No,No,No
+3/14/2024 19:24:50,4251,Gallop Gearheads,48inch,27 in,Tank,3,Under-Bumper,,labview,Both,Yes,,No,Both,Speaker,Both,Source,Sometimes,Yes,
+3/14/2024 19:26:04,4206,Robo Vikes,23 inches,27,Swerve,4,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,Sometimes,Yes,Group was so nice!!
+3/14/2024 19:28:36,9088,Nasas mark infinity,27 inchss,24 inchss,Swerve,4,Over-Bumper,,Java,Speaker,Yes,2 note auto,Yes,Both,Speaker,Human player drops it on ground at the source; can do ground regularly,Ground,No,Yes,
+3/14/2024 19:29:28,4295,Houston Stingers,24 inches at shortest,27.5 inches,Swerve,3,Over-Bumper,,javascript,don’t have auto,No,need help,No,Both,Speaker,Ground,Ground,No,Yes,
+3/14/2024 19:29:44,3005,Robochargers,27,33,Swerve,5,Under-Bumper,,Java,Both,Yes,,No,Both,No preference,Ground,Ground,No,Yes,
+3/14/2024 19:32:56,2582,Pantherbots,25,26,Swerve,4,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Both,Both,Ground,No,Yes,
+3/14/2024 19:36:18,5908,Spartans,24,27.5,Swerve,3,Under-Bumper,,Java,no auto yet,No,need auto,Yes,Amp,Amp,Source,Source,No,Yes,
+3/14/2024 19:36:20,4153,Project Y,22,28,Swerve,3,Under-Bumper,,LabView,Neither,No,"No auto, plan to shoot and drive out, potentially get 1 and shoot",Yes,Speaker,Speaker,Ground,Ground,No,Yes,"Testing shooting into amp, can get speaker reliably"
+3/14/2024 19:37:37,9080,Enigma,26,24,Swerve,4,Over-Bumper,,Java,None working on speaker,Yes,They haven't tested anything in auto,Yes,Not coded amp; can do speaker ,Speaker,Not coded source,Ground,No,Yes,
+3/14/2024 19:38:40,418,Purple Haze,27 in,25.5,Swerve,3,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,No preference,Both,Ground,No,Yes,The arms arent on for hang
+3/14/2024 19:55:32,5411,Robotalons ,19.5 inch,29.5 inch,Swerve,4,Under-Bumper,,Java,Speaker,Yes,,No,Both,none,Ground,Ground,No,No,
+3/14/2024 20:17:43,7506,Wildcards,34,34 (x 25.75),Swerve,4,Over-Bumper,,Java,Both,Yes,Depends on who playing with. Ideally run 3 pc auto to centerline shoot preload pickup 2. Either side works,No,Both,No Pref.,Ground,Ground,No,Yes,We got roasted for our broken tape measurer (lol don’t worry it was funny)
+3/14/2024 20:24:27,7534,Dragonflies,46,30 (x 26),Tank,3,Under-Bumper,"Little disinterested, probably just busy but we could help :(",Java,No score,No,No auto…,No,Amp,Amp,Both,No pref.,No,No,Eh.
+3/15/2024 8:06:41,7492,Cavbots,2ft 8 ,27,Swerve,5,Over-Bumper,,Java,Both,Yes,"2 pc all time
+4 pc sometime",Yes,Both,No pref.,Both,No Pref.,No,Yes,
+3/15/2024 8:09:49,3310,Black Hawk Robotics,Under stage,30x30,Swerve,5,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,No preference,Both,Ground,Yes,Yes,
+3/15/2024 8:10:26,6672,Fusion Corp.,26,26,Swerve,5,Under-Bumper,,Java,Speaker,Yes,4 pc auto,Yes,Both,Speaker,Ground,Ground,Sometimes,Yes,
+3/15/2024 8:21:13,7271,Hangar 84,31,28.5,Tank,2,Under-Bumper,,Python,Amp,No,,Yes,Amp,Amp,Source,Source,Sometimes,No,
+3/15/2024 8:25:52,9752,ITKAN Robotics Jr.,0,0,Swerve,3,Under-Bumper,ROBOT MISSING :( COULD NOT GET DIMENSIONS SORRY IVY,Java,Speaker,Yes,3 / 4 note auto,Yes,Both,"No pref,",Ground,Ground,No,Yes,
+,,,,,,,,,,,,,,,,,,,,
+3/15/2024 9:27:45,7503,Radicubs,26,29,Swerve,3,Under-Bumper,Intake and shooter is one mechanism,Java,Speaker,Yes,2 note auto,No,Speaker,Speaker,Both,Source,No,Yes,Have a camera but cannot implement it
