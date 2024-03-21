@@ -1,4 +1,5 @@
 import streamlit as st
+st.title("Privacy Policy")
 st.markdown("""Effective Date: 3/20/2024
 
 This Privacy Policy describes how this app collects, uses, shares, and protects information when you use our robotics app (the "App") that pulls data from various robotics websites. By using the App, you agree to the terms and conditions of this Privacy Policy.
