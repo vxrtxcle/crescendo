@@ -371,7 +371,7 @@ def generate_json():
     temp = teams
     rating = [1,2,3]
     match_dict.update({"matches": {}})
-    for l in range(1,301):
+    for l in range(1,31):
         z = "match" + str(l)
         match_dict['matches'].update({z: {}})
         match_dict["matches"][z].update({"match": l})
@@ -755,18 +755,12 @@ def qualitative_assignment():
     for x in req:
         y = x.replace('frc', '')
         teams.append(int(y))
-    url = "https://www.thebluealliance.com/api/v3/event/2024txwac/teams/keys"
+    url = "https://www.thebluealliance.com/api/v3/event/2024txfor/rankings"
     response = requests.get(url,headers)
     req = response.json()
     common = []
-    for z in req:
-        a = z.replace('frc', '')
-        teams2.append(int(a))
-    for x in teams:
-        for y in teams2:
-            if x == y:
-                common.append(x)
-    print(common)
+    for x in req['rankings']:
+        print(x['team_key'].replace('frc',''))
 
     #print(teams)
 
@@ -774,7 +768,7 @@ def qualitative_assignment():
 #actual_skill()
 #raw_skill('2024txwac')
 #match_difficulty()
-qualitative_assignment()
+generate_json()
 '''
 {
 	"entries": [

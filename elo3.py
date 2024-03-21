@@ -44,7 +44,7 @@ class node:
         team = self.team
         with open('match2.json') as f:
             x = json.load(f)
-            for y in range(1,301):
+            for y in range(1,31):
                 z = "match" + str(y)
                 if int(x['matches'][z]["t1"]) == team:
 
@@ -87,7 +87,7 @@ class node:
         team = self.team
         with open('match2.json') as f:
             x = json.load(f)
-            for y in range(1, 101):
+            for y in range(1, 31):
                 z = "match" + str(y)
                 if int(x['matches'][z]["t1"]) == team:
 
@@ -140,7 +140,7 @@ def generate_better_than_list():
     node_list = []
     with open("match2.json", "r") as f:
         x = json.load(f)
-        for y in range(1,301):
+        for y in range(1,31):
             b = "match" + str(y)
             for z in range(1,4):
                 c = "t" + str(z)
@@ -261,15 +261,14 @@ def weighed_graph():
         #print(x.team)
         #for y in x.list:
             #print(y)
+    for u,v in G.edges:
+        print(str(u.team) + " -> " + str(v.team) + " Weight: " + str(G[u][v]['weight']))
 
 
-    def R(A, B, currTeam, G, seen_nodes, seen):
+    def R(A, B, currTeam, G, seen_nodes, seen, found):
         # 1st check if there exists an edge between A and B
-        if G.has_edge(find_node_by_team(seen_nodes, A), find_node_by_team(seen_nodes, B)):
-            edge_data = G.get_edge_data(find_node_by_team(seen_nodes, A),find_node_by_team(seen_nodes, B))
-            edge_weight = edge_data['weight']
-            return {'prob': edge_weight, 'dist': 1}
-        found = []
+        if G.has_edge(currTeam, find_node_by_team(seen_nodes, B)):
+            return {'prob': G[currTeam][find_node_by_team(seen_nodes, B)]['weight'], 'dist': 1}
         if len(G.out_edges(currTeam)) == 0:
             print("No edges")
             return None
@@ -280,11 +279,11 @@ def weighed_graph():
             seen.append(currTeam.team)
             if v.team == B:
                 return {'prob': G[u][v]['weight'], 'dist': 1}
-            if len(seen) > 4:
-                #print("Maximum depth reached")
+            if u.team in seen and v.team in seen:
                 continue
-            temp = R(A, B, v, G, seen_nodes, seen)
+            temp = R(A, B, v, G, seen_nodes, seen, found)
             found.append({'prob': temp['prob'] * G[u][v]['weight'], 'dist': temp['dist'] + 1})
+            print(found)
         lowest = None
         if len(found) == 0:
             print("No found")
@@ -295,12 +294,14 @@ def weighed_graph():
         for x in range(len(found)):
             temp = found[x]['dist']
             temp2 = found[x]['prob']
-            if temp < lowest:
+            if temp <= lowest:
                 lowest = temp
                 edge_weight = found[x]['prob']
+            print(edge_weight)
+            print(temp2)
             if temp2 > edge_weight:
                 edge_weight = temp2
-
+                print(str(edge_weight) + " Edge Weight!!")
         return {'prob': edge_weight, 'dist': lowest}
 
 
@@ -312,12 +313,16 @@ def weighed_graph():
     print(int(A))
     print(int(B))
     currTeam = find_node_by_team(seen_nodes, int(A))
+
     '''for x,y in G.edges:
         if x.team == 9105:
             print(str(x.team) + " -> " + str(y.team) + " Probability: " + str(G[x][y]['weight']))
         if y.team == 2687:
             print(str(x.team) + " -> " + str(y.team) + " Probability: " + str(G[x][y]['weight']))'''
-    print(str(A) + " is better than " + str(B) + " about " + str(R(int(A), int(B), currTeam, G, seen_nodes, [])['prob'] * 100) + "% of the time, and has a distance of " + str(R(int(A), int(B), currTeam, G, seen_nodes, [])['dist']))
+    if currTeam != None and find_node_by_team(seen_nodes, int(B)) != None:
+        print(str(A) + " is better than " + str(B) + " about " + str(R(int(A), int(B), currTeam, G, seen_nodes, [], [])['prob'] * 100) + "% of the time, and has a distance of " + str(R(int(A), int(B), currTeam, G, seen_nodes, [], [])['dist']))
+    else:
+        print("Error! Team not found!")
     #for x in find_node_by_team(seen_nodes,3310).list:
         #print(x)
 #3310 9088 9156 2468 3005 7492 2582 8512 418 7321 9407 9714 7534 9752 7271 4251 7506 4206 9492 8842 7503 5411
@@ -333,18 +338,6 @@ def find_matching_dictionary(data, target_value):
                 return item
             elif isinstance(value, str) and value.isdigit() and int(value) == target_value:
                 return item
-def convert():
-    with open("driverratings.json", "r") as f:
-        x = json.load(f)
-        count = 0
-        t1 = 0
-        t2 = 0
-        t3 = 0
-        r1 = 0
-        r2 = 0
-        r3 = 0
-        #for y in range(0,len(x)):
-         #   if x['']
 
 
 
