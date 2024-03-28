@@ -10,7 +10,6 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from PIL import Image
-import cv2
 
 pit_data_path = Path(__file__).parents[1] / 'pit.csv'
 pit_ftw_path = Path(__file__).parents[1] / 'pit-fort-worth.csv'
