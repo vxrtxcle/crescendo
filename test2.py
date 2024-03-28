@@ -73,7 +73,7 @@ def download_image(file_id, output_path):
     """
     # Set up the credentials flow
     flow = InstalledAppFlow.from_client_secrets_file(
-        'credentials.json', SCOPES)
+        'token.json', SCOPES)
     creds = flow.run_local_server(port=0)
 
     # Build the Drive API service
@@ -154,8 +154,8 @@ SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 creds = None
 
 # Check if credentials file exists
-if os.path.exists('token.json'):
-    creds = Credentials.from_authorized_user_file('token.json')
+if os.path.exists('credentialsold3.json'):
+    creds = Credentials.from_authorized_user_file('credentialsold3.json')
 
 # If there are no (valid) credentials available, let the user log in
 if not creds or not creds.valid:
@@ -163,11 +163,11 @@ if not creds or not creds.valid:
         creds.refresh(Request())
     else:
         flow = InstalledAppFlow.from_client_secrets_file(
-            'credentials.json', SCOPES)
+            'token.json', SCOPES)
         creds = flow.run_local_server(port=0)
 
     # Save credentials for the next run
-    with open('token.json', 'w') as token:
+    with open('credentialsold3.json', 'w') as token:
         token.write(creds.to_json())
 
 # Initialize the Google Drive API
@@ -200,8 +200,8 @@ SCOPES = ['https://www.googleapis.com/auth/drive']
 creds = None
 
 # Check if credentials file exists
-if os.path.exists('token.json'):
-    creds = Credentials.from_authorized_user_file('token.json')
+if os.path.exists('credentialsold3.json'):
+    creds = Credentials.from_authorized_user_file('credentialsold3.json')
 
 # If there are no (valid) credentials available, let the user log in
 if not creds or not creds.valid:
@@ -209,11 +209,11 @@ if not creds or not creds.valid:
         creds.refresh(Request())
     else:
         flow = InstalledAppFlow.from_client_secrets_file(
-            'token.json', SCOPES)
+            'credentialsold3.json', SCOPES)
         creds = flow.run_local_server(port=0)
 
     # Save credentials for the next run
-    with open('token.json', 'w') as token:
+    with open('credentialsold3.json', 'w') as token:
         token.write(creds.to_json())
 
 # Initialize the Google Drive API

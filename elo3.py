@@ -44,7 +44,7 @@ class node:
         team = self.team
         with open('match2.json') as f:
             x = json.load(f)
-            for y in range(1,31):
+            for y in range(1,3):
                 z = "match" + str(y)
                 if int(x['matches'][z]["t1"]) == team:
 
@@ -87,7 +87,7 @@ class node:
         team = self.team
         with open('match2.json') as f:
             x = json.load(f)
-            for y in range(1, 31):
+            for y in range(1, 3):
                 z = "match" + str(y)
                 if int(x['matches'][z]["t1"]) == team:
 
@@ -140,7 +140,7 @@ def generate_better_than_list():
     node_list = []
     with open("match2.json", "r") as f:
         x = json.load(f)
-        for y in range(1,31):
+        for y in range(1,3):
             b = "match" + str(y)
             for z in range(1,4):
                 c = "t" + str(z)
@@ -282,7 +282,8 @@ def weighed_graph():
             if u.team in seen and v.team in seen:
                 continue
             temp = R(A, B, v, G, seen_nodes, seen, found)
-            found.append({'prob': temp['prob'] * G[u][v]['weight'], 'dist': temp['dist'] + 1})
+            if v.team == B:
+                found.append({'prob': temp['prob'] * G[u][v]['weight'], 'dist': temp['dist'] + 1})
             print(found)
         lowest = None
         if len(found) == 0:
@@ -302,7 +303,7 @@ def weighed_graph():
             if temp2 > edge_weight:
                 edge_weight = temp2
                 print(str(edge_weight) + " Edge Weight!!")
-        return {'prob': edge_weight, 'dist': lowest}
+        return {'prob': edge_weight, 'dist': found}
 
 
     #print(G.has_edge(find_node_by_team(seen_nodes, 3310),find_node_by_team(seen_nodes, 3743)))

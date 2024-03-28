@@ -4,7 +4,7 @@ from googleapiclient.discovery import build
 
 def download_image(image_url, output_path):
     # Load OAuth 2.0 credentials
-    credentials = Credentials.from_authorized_user_file('credentials.json')  # Update with your credentials file path
+    credentials = Credentials.from_authorized_user_file('token.json')  # Update with your credentials file path
     print(credentials)
     # Build the Drive API service
     drive_service = build('drive', 'v3', credentials=credentials)
