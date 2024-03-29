@@ -13,7 +13,6 @@ url = "https://www.thebluealliance.com/api/v3/event/2024txfor/teams/keys"
 headers = {'X-TBA-Auth-Key': tba_key}
 response = requests.get(url, headers)
 req = response.json()
-os.write(1, f'{req}'.encode())
 teams = []
 for x in req:
     y = x.replace('frc','')

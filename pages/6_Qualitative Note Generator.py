@@ -5,6 +5,7 @@ import streamlit as st
 import os
 from pathlib import Path
 import pandas as pd
+import time
 from dotenv import load_dotenv
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
@@ -18,12 +19,10 @@ tba_key = os.getenv('X_TBA_Auth_Key')
 scopes = os.getenv("SCOPES")
 document_id = os.getenv("DOCUMENT_ID")
 
-pit_data_path = 'pit.csv'
 pit_ftw_path = 'pit-fort-worth.csv'
-data_path = "Data Set.csv"
+pit_data = pd.read_csv(pit_ftw_path)
 
-pit_data = pd.read_csv(pit_data_path)
-pit_ftw_data = pd.read_csv(pit_ftw_path)
+data_path = "Data Set.csv"
 dataset_data = pd.read_csv(data_path)
 
 SCOPES = ['https://www.googleapis.com/auth/documents.readonly']
@@ -97,36 +96,57 @@ for x in range(len(teams2)):
     else:
         team_notes.append(y[1])
 
-
-team_number = st.text_input("What team are you selecting?")
-
+url = "https://www.thebluealliance.com/api/v3/event/2024txfor/teams/keys"
+headers = {'X-TBA-Auth-Key': tba_key}
+response = requests.get(url, headers)
+req = response.json()
+arr = []
+for x in req:
+    y = x.replace('frc','')
+    arr.append(int(y))
+arr.sort()
+team_number = st.selectbox("Select Team", arr, format_func=lambda x: f"{x}")
 if team_number:
-    st.title("Team #" + str(int(team_number)))
+    st.title("Team #" + str(team_number))
     st.write("Qualitative Notes for Matches")
-    url = "https://www.thebluealliance.com/api/v3/team/" + "frc" + str(int(team_number)) + "/event/2024txfor/matches/simple"
+    url = "https://www.thebluealliance.com/api/v3/team/" + "frc" + str(team_number) + "/event/2024txfor/matches/simple"
     response = requests.get(url, headers)
     req = response.json()
+    matches = []
     for x in req:
-        st.write("Match " + str(x['comp_level']) + "_" + str(x['match_number']))
-        teams = x['alliances']['red']['team_keys'] + x['alliances']['blue']['team_keys']
-        for y in x['alliances']['red']['team_keys']:
-            z = y.replace('frc','')
-            if z != "2689" and z != "2687" and z != "2468":
-                index = teams2.index(str(z) + " - ")
-                st.write(z + " - " + team_notes[index])
-            elif z == "2687" or z == "2689":
-                st.write(z + " - :)")
-            else:
-                continue
-        for y in x['alliances']['blue']['team_keys']:
-            z = y.replace('frc','')
-            if z != "2689" and z != "2687" and z != "2468":
-                index = teams2.index(str(z) + " - ")
-                st.write(z + " - " + team_notes[index])
-            elif z == "2687" or z == "2689":
-                st.write(z + " - :)")
-            else:
-                continue
+        if str(x['comp_level']) == 'sf':
+            matches.append(str(x['comp_level']) + "_" + str(x['set_number']) + "m" + str(x['match_number']))
+            continue
+        matches.append(str(x['comp_level']) + "_" + str(x['match_number']))
+    match_number = st.selectbox("Select Match", matches, format_func=lambda x: f"{x}")
+    if match_number:
+        for x in req:
+            if str(x['comp_level']) + "_" + str(x['match_number']) == match_number or str(x['comp_level']) + "_" + str(x['set_number']) + "m" + str(x['match_number']) == match_number:
+                if str(x['comp_level']) + "_" + str(x['set_number']) + "m" + str(x['match_number']) == match_number:
+                    st.write("Semis Match " + str(x['set_number']))
+                elif x['comp_level'] == "f":
+                    st.write("Finals Match " + str(x['match_number']))
+                else:
+                    st.write("Qualification Match " + str(x['match_number']))
+                teams = x['alliances']['red']['team_keys'] + x['alliances']['blue']['team_keys']
+                for y in x['alliances']['red']['team_keys']:
+                    z = y.replace('frc','')
+                    if z != "2689" and z != "2687" and z != "2468":
+                        index = teams2.index(str(z) + " - ")
+                        st.write(z + " - " + team_notes[index])
+                    elif z == "2687" or z == "2689":
+                        st.write(z + " - :)")
+                    else:
+                        continue
+                for y in x['alliances']['blue']['team_keys']:
+                    z = y.replace('frc','')
+                    if z != "2689" and z != "2687" and z != "2468":
+                        index = teams2.index(str(z) + " - ")
+                        st.write(z + " - " + team_notes[index])
+                    elif z == "2687" or z == "2689":
+                        st.write(z + " - :)")
+                    else:
+                        continue
 
 
 
