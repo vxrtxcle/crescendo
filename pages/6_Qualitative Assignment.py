@@ -12,8 +12,8 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 import os.path
-
-load_dotenv()
+dotenv_path = '.env'
+load_dotenv(dotenv_path)
 tba_key = os.getenv('X_TBA_Auth_Key')
 scopes = os.getenv("SCOPES")
 document_id = os.getenv("DOCUMENT_ID")
@@ -101,7 +101,7 @@ for x in range(len(teams2)):
 team_number = st.text_input("What team are you selecting?")
 
 if team_number:
-    st.title("Team #: " + str(int(team_number)))
+    st.title("Team #" + str(int(team_number)))
     url = "https://www.thebluealliance.com/api/v3/team/" + "frc" + str(int(team_number)) + "/events/simple"
     headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)

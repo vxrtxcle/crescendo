@@ -4,7 +4,7 @@ import requests
 import json
 from dotenv import load_dotenv
 import os
-dotenv_path = '/Users/akashmaiti/PycharmProjects/crescendo/crescendo/.env'
+dotenv_path = '.env'
 load_dotenv(dotenv_path)
 tba_key = os.getenv('X_TBA_Auth_Key')
 from pathlib import Path
