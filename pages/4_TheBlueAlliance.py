@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import requests
 load_dotenv()
 tba_key = os.getenv('X_TBA_Auth_Key')
-os.write(tba_key)
+os.write(1,f'{tba_key}')
 st.subheader("The Blue Alliance")
 pit_data_path = Path(__file__).parents[1] / 'pit-fort-worth.csv'
 pit_data = pd.read_csv(pit_data_path)
