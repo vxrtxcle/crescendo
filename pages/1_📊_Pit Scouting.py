@@ -10,6 +10,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from PIL import Image
+from io import BytesIO
 
 pit_data_path = Path(__file__).parents[1] / 'pit.csv'
 pit_ftw_path = Path(__file__).parents[1] / 'pit-fort-worth.csv'
@@ -79,6 +80,12 @@ try:
                     image_data = service.files().get_media(fileId=file_id).execute()
                     team_string = "Team #" + str(team_number)
                     image = st.image(image_data, caption=team_string)
+                    rotate = st.button("Rotate 90º")
+                    if rotate:
+                        image2 = Image.open(BytesIO(image_data))
+                        rotated_image = image2.rotate(90)
+                        image.empty()
+                        image = st.image(rotated_image, caption=team_string)
 
                 else:
                     st.error("The selected file is not an image.")
@@ -89,6 +96,12 @@ try:
                 image_data = service.files().get_media(fileId=file_id).execute()
                 team_string = "Team #" + str(team_number)
                 image = st.image(image_data, caption=team_string)
+                rotate = st.button("Rotate 90º")
+                if rotate:
+                    image2 = Image.open(BytesIO(image_data))
+                    rotated_image = image2.rotate(90)
+                    image.empty()
+                    image = st.image(rotated_image, caption=team_string)
             else:
                 st.error("The selected file is not an image.")
 
