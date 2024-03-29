@@ -102,17 +102,8 @@ team_number = st.text_input("What team are you selecting?")
 
 if team_number:
     st.title("Team #" + str(int(team_number)))
-    url = "https://www.thebluealliance.com/api/v3/team/" + "frc" + str(int(team_number)) + "/events/simple"
-    headers = {'X-TBA-Auth-Key': tba_key}
-    response = requests.get(url, headers)
-    req = response.json()
-    events = []
-    for x in req:
-        if x['year'] == 2024:
-            events.append(str(x['year']) + str(x['event_code']))
     st.write("Qualitative Notes for Matches")
-    event = st.selectbox("Select an event: ", events, format_func=lambda x: f"{x}")
-    url = "https://www.thebluealliance.com/api/v3/team/" + "frc" + str(int(team_number)) + "/event/" + event + "/matches/simple"
+    url = "https://www.thebluealliance.com/api/v3/team/" + "frc" + str(int(team_number)) + "/event/2024txfor/matches/simple"
     response = requests.get(url, headers)
     req = response.json()
     for x in req:
