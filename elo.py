@@ -371,7 +371,7 @@ def generate_json():
     temp = teams
     rating = [1,2,3]
     match_dict.update({"matches": {}})
-    for l in range(1,301):
+    for l in range(1,6):
         z = "match" + str(l)
         match_dict['matches'].update({z: {}})
         match_dict["matches"][z].update({"match": l})

@@ -19,11 +19,11 @@ tba_key = os.getenv('X_TBA_Auth_Key')
 scopes = os.getenv("SCOPES")
 document_id = os.getenv("DOCUMENT_ID")
 
-pit_ftw_path = 'pit-fort-worth.csv'
-pit_data = pd.read_csv(pit_ftw_path)
+#pit_ftw_path = 'pit-fort-worth.csv'
+#pit_data = pd.read_csv(pit_ftw_path)
 
-data_path = "Data Set.csv"
-dataset_data = pd.read_csv(data_path)
+#data_path = "Data Set.csv"
+#dataset_data = pd.read_csv(data_path)
 
 SCOPES = ['https://www.googleapis.com/auth/documents.readonly']
 DOCUMENT_ID = document_id
@@ -73,7 +73,7 @@ try:
             if z == '\n':
                 continue
             else:
-                notes += z
+                notes += z + '\n'
 
 
 except HttpError as err:
@@ -106,6 +106,7 @@ for x in req:
     arr.append(int(y))
 arr.sort()
 team_number = st.selectbox("Select Team", arr, format_func=lambda x: f"{x}")
+
 if team_number:
     st.title("Team #" + str(team_number))
     st.write("Qualitative Notes for Matches")
