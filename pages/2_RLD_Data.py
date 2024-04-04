@@ -25,7 +25,7 @@ if options:
     for x in options:
         edict = {'Match Number': [], 'Auto Speaker': [], 'Auto Speaker Miss': [], 'Tele Speaker': [],
                  "Tele Speaker Miss": [], 'Tele Amp': [], 'Tele Amp Miss': [], 'Drops': [], 'Endgame Stage': [],
-                 'DC': [], 'Avg': 0, 'Min': 0, 'Max': 0}
+                 'DC': []}
         with open("Fort Worth.json", 'r') as f:
             g = json.load(f)
             for y in g:
@@ -90,16 +90,11 @@ if options:
                             max = y
                         total += y
                 avg = total / len(edict[klist[x]])
-                edict['Avg'] = avg
-                edict['Max'] = max
-                edict['Min'] = min
-            for y in g:
-                if int(y['team_#']) == int(x):
-                    edict['Endgame Stage'] = []
-                    edict['DC'] = []
-                    edict['DC'].append(y['disconnect'])
-                    edict['Endgame Stage'].append(y['endgame_stage_actions'])
+                edict[klist[x]].append(avg)
+                edict[klist[x]].append(max)
+                edict[klist[x]].append(min)
 
         st.subheader("Team #" + str(x))
         match_table = pd.DataFrame.from_dict(edict)
         st.table(match_table)
+        st.write("For endgame stage, 4 is onstage spotlit, 3 is onstage, 1 is park, and 5 points for a trap")

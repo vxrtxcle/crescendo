@@ -11,27 +11,32 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from PIL import Image
 
-pit_data_path = Path(__file__).parents[1] / 'pit.csv'
-pit_ftw_path = Path(__file__).parents[1] / 'pit-fort-worth.csv'
-data_path = Path(__file__).parents[1] / "Data Set.csv"
+#pit_data_path = Path(__file__).parents[1] / 'pit.csv'
+#pit_state_path = Path(__file__).parents[1] / 'pit-fort-worth.csv'
+#data_path = Path(__file__).parents[1] / "Data Set.csv"
 
-pit_data = pd.read_csv('pit.csv')
-pit_ftw_data = pd.read_csv('pit-fort-worth.csv')
-dataset_data = pd.read_csv('Data Set.csv')
+#pit_data = pd.read_csv('pit.csv')
+pit_state_data = pd.read_csv('pit-state.csv')
+#dataset_data = pd.read_csv('Data Set.csv')
 
-y = pit_ftw_data["Team Number (of the team you're scouting)"].unique()
-y.sort()
-
-team_number = st.selectbox("Select Team", y, format_func=lambda x: f"{x}")
+y = pit_state_data["Team Number (of the team you're scouting)"]
+div = pit_state_data["Divisions"].unique()
+division = st.selectbox("Select Division", div, format_func=lambda x: f"{x}")
+div_team = pit_state_data['Divisions']
+z = []
+for x in range(len(y)):
+    if str(div_team[x]) == division:
+        z.append(y[x])
+z.sort()
+team_number = st.selectbox("Select Team", z, format_func=lambda x: f"{x}")
 # Make it select for a tournament
 image_column_name = "Photo (clear view; no people blocking please; MAKE SURE THE ROBOT MATCHES WITH THE NUMBER YOU PUT ABOVE)"
 
 
 st.subheader("Pit Scouting")
-filtered_pit_data = pit_ftw_data[pit_ftw_data["Team Number (of the team you're scouting)"] == team_number]  # Placeholder for team selection, adapt if needed
+filtered_pit_data = pit_state_data[pit_state_data["Team Number (of the team you're scouting)"] == team_number]  # Placeholder for team selection, adapt if needed
 st.write("General")
-st.table(filtered_pit_data[["Height (from the ground) (in)", "Width (in respect to climb; without bumpers) (in)",
-                                "Drivebase", "Programming Language", "Camera Usage? (to assist drivers)",
+st.table(filtered_pit_data[["Drivebase", "Programming Language", "Camera Usage? (to assist drivers)",
                                 'Over/Under Bumper Ground Pickup']])
 st.write("Auto")
 st.table(filtered_pit_data[["Leave Zone Auto?", "Scoring Ability (in auto)"]])
@@ -42,7 +47,7 @@ st.table(filtered_pit_data[['Can they score in trap?', 'Can they get onstage (ha
 st.write("Comments")
 st.table(filtered_pit_data[['Final Comments', 'Comments (about auto)', 'Comments?']])
 
-df = pd.read_csv('pit-photos-fort-worth.csv')
+df = pd.read_csv('pit-photos-state.csv')
 image_column_name = "Photo (clear view; no people blocking please; MAKE SURE THE ROBOT MATCHES WITH THE NUMBER YOU PUT ABOVE)"
 
 filtered_df = df[df["Team Number (OF THE TEAM YOU'RE TAKING THE PICTURE OF)"] == team_number]

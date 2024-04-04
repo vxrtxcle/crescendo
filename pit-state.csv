@@ -1,0 +1,93 @@
+Timestamp,Divisions,Team Number (of the team you're scouting),Team Name (same idea as above),Drivebase,Vibe Check! (of robot not people),Over/Under Bumper Ground Pickup,Comments?,Programming Language,Scoring Ability (in auto),Leave Zone Auto?,Comments (about auto),Camera Usage? (to assist drivers),Scoring Ability (in teleop),Scoring Preference (in teleop),Pickup Ability,Pickup Preference,Can they score in trap?,Can they get onstage (hang)?,Final Comments
+4/4/2024 8:32:38,Apollo,1296,Full Metal Jackets,Swerve,4,Under-Bumper,,Java,Speaker,Yes,"Three notes and wing + middle note too, April tags in auto",Yes,Both,Feed,Ground,Ground,No,Yes,"16 note cycle match, strong shooter "
+4/4/2024 8:33:44,Mercury,231,High Voltage,Swerve,4,Over-Bumper,,C++,Speaker,Yes,,Yes,Both,none,Ground,Ground,Yes,Yes,have 4 nite auto
+4/4/2024 8:34:12,Apollo,2848,Rangers,Swerve,4,Over-Bumper,,Java,Both,Yes,,Yes,Both,Speaker,Both,Ground,No,No,
+4/4/2024 8:34:41,Mercury,2158,austin cans,Swerve,5,Over-Bumper,,Java,Speaker,Yes,auto is rlly adaptive,No,Both,Speaker,ground and working on source,Ground,No,No,“we can rlly do anything and they think they’ll shuttle and play defense”
+4/4/2024 8:35:15,Apollo,8749,The barn ,Swerve,4,Over-Bumper,,Java,Speaker,Yes,Score pre load plus two,No,Both,Amp,Both,Ground,No,Yes,I be game scores till 10 sec then hang
+4/4/2024 8:36:37,Apollo,2714,BBQ ,Swerve,4,Under-Bumper,,Java,Speaker,Yes,"4 note auto, 2 on either side",Yes,Both,Speaker,Ground,Ground,No,Yes,"Can go under stage, shooter is reliable, “can shoot anywhere in the wing”"
+4/4/2024 8:37:48,Mercury,2882,Nuts n’ Boltz,Swerve,4,Over-Bumper,,Java,Neither,Yes,,Yes,Speaker,Speaker,Ground,Ground,No,No,
+4/4/2024 8:37:55,Mercury,5892,Energy Herds,Swerve,4,Over-Bumper,,Java,Speaker,Yes,,Yes,Speaker,Speaker,Ground,Ground,No,Yes,
+4/4/2024 8:38:21,Mercury,2582,pantherbots,Swerve,4,Under-Bumper,,Java,Speaker,Yes,they have four note and three note and straight mobility auto that r consistent,Yes,Both,both (they r both consistent),Both,Ground,Sometimes,Yes,"they can do harmony and can climb from everywhere, "
+4/4/2024 8:38:27,Mercury,418,Purple Haze,Swerve,3,Under-Bumper,,Java,Speaker,Yes,"different auto capabilities:
+4 note auto (most reliable)
+“disruptor auto”: pushes notes out of way",Yes,Both,none,Both,unclear,No,No,auto align function!
+4/4/2024 8:39:34,Apollo,4063,TrikzR4Kids,Swerve,4,Under-Bumper,"Shooter pivots, climb!!",Java,Speaker,Yes,4 piece auto,Yes,Both,Pretty consistent in both but prefer speaker,Ground,Ground,No,Yes,Pink on the robot!! Alliance partners get bunny ears!!!!
+4/4/2024 8:39:52,Apollo,148,Robowranglers,Swerve,5,Under-Bumper,,Java,Speaker,Yes,Note tracking,Yes,Both,Versatile,Ground,Ground,Yes,Yes,It’s cool
+4/4/2024 8:40:09,Apollo,3310,Blackhawk robotics,Swerve,5,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,Yes,Yes,
+4/4/2024 8:41:07,Mercury,2583,orange dynamite,Swerve,3,Over-Bumper,,Java,Speaker,Yes,3 note auto,No,Both,Amp,Both,Ground,No,Yes,n/a
+4/4/2024 8:41:36,Apollo,6369,Mercenary Robotics,Swerve,4,Under-Bumper,Looks impressive,Java,Speaker,Yes,4-note,Yes,Both,Speaker,Both,Ground,No,No,
+4/4/2024 8:41:58,Mercury,6357,The Spring Konstant,Swerve,3,Under-Bumper,,Java,Can do both but priorit. Speak,Yes,,Yes,Both,Speaker,Ground,Ground,No,Sometimes,
+4/4/2024 8:42:06,Mercury,1745,P51 Mustangs,Swerve,4,Under-Bumper,,Java,Speaker,Yes,"shoot and back up from all 3 sides
+2 note from center",Yes,Both,none,Ground,Ground,Yes,Yes,did not get a note stuck in robot!
+4/4/2024 8:42:25,Apollo,3679,Rattlers,Swerve,4,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Both,Ground,No,Yes,
+4/4/2024 8:43:04,Apollo,8858,Beast from the East,Tank,4,Over-Bumper,,Java,Speaker,Yes,Scores preload plus 1 and drives to a third that gets scored at the start of teleop,Yes,Both,Speaker,Ground,Ground,No,Yes,Takes roughly 15 seconds to climb and can harmonize
+4/4/2024 8:43:07,Apollo,5414,pearadox,Swerve,4,Under-Bumper,dubs,Java,Speaker,Yes,5 note,Yes,Both,Speaker,Both,Ground,Yes,Yes,ggs
+4/4/2024 8:44:11,Apollo,3847,Spectrum ,Swerve,5,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Both,Ground,Ground,Yes,Yes,
+4/4/2024 8:44:53,Mercury,6377,Howdy Bots,Swerve,3,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/4/2024 8:45:24,Apollo,9512,Horsepower,Tank,3,Over-Bumper,,Java,Speaker,Yes,Trying for a 2-note auto,Yes,Both,Equally consistent,Ground,Ground,No,Yes,Can travel understage
+4/4/2024 8:45:25,Apollo,624,CRyptonite,Swerve,4,Under-Bumper,,Java,Speaker,Yes,Front ones + middle ones,Yes,Both,Speaker,Both,Ground,Sometimes,Yes,"Hang takes 3-4 seconds, can try and triple"
+4/4/2024 8:46:15,Apollo,5431,Titan robotics,Swerve,4,Over-Bumper,.,Java,Both,Yes,Speaker preferre,Yes,Both,Speaker,Both,Ground,No,Yes,ggs
+4/4/2024 8:46:18,Apollo,9181,Platypirates,Tank,4,Source,,Java,They taxi and they can do trap,Yes,,Yes,Amp,They just trap,Source,Source,Yes,Yes,
+4/4/2024 8:46:19,Mercury,118,Robonauts,Swerve,4,Under-Bumper,,C++,Speaker,Yes,"5 pc
+preload, 3 up front and centerline
+ends at centerline",Yes,Both,none,Ground,Ground,Yes,Yes,"short enough to go under stage
+seemed kinda uncertain lol"
+4/4/2024 8:46:41,Mercury,2881,lady cans,Swerve,5,Under-Bumper,changed significantly and has a diff climb,java for robot python for coprocessor and html/typescript for dashboard ,Speaker,Yes,40+ autos and pretty consistent,Yes,Both,Speaker,Ground,Ground,No,Yes,"climb is under 5 secs, they can shuttle, offense, if intake breaks we can work, they are PREPPED (and super nice) "
+4/4/2024 8:46:49,Mercury,8573,Legacy,Mecanum,3,Over-Bumper,,Java,Speaker,Yes,,Yes,Speaker,Speaker,Ground,Ground,No,Yes,
+4/4/2024 8:47:33,Mercury,3561,Roboraider,Tank,4,Under-Bumper,,C++,Speaker,Yes,,Yes,Both,None,Ground,Ground,No,Yes,
+4/4/2024 8:47:59,Apollo,5427,Steel talons,Swerve,4,Over-Bumper,Gg,Java,4-5 notes,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,so nice!
+4/4/2024 8:48:05,Mercury,6672,Fusion Corps,Swerve,4,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Both,Ground,Ground,Sometimes,Yes,
+4/4/2024 8:49:25,Mercury,9128,Itkan,Swerve,5,Under-Bumper,,Java,Speaker,Yes,"source and speaker side
+6 note get far two in center, preload and front 3.
+majority 4-5 notes, use 3 in front and goes to center line for one or two pc",Yes,Both,Speaker,Ground,Ground,No,Yes,we can pass!
+4/4/2024 8:49:54,Apollo,8874,The Cybirds,Swerve,4,Under-Bumper,Goes through to transfer instead of swinging over into the shooter,Java,Speaker,Yes,Score preload plus one of the closest three notes,No,Both,Amp,Ground,Ground,No,Yes,Hang takes roughly 15 seconds and they go straight to hang at the start of endgame and claim to play good defense and are able to score amp consistently and quickly in addition to speaker
+4/4/2024 8:50:33,Mercury,3676,Red shift,Swerve,4,Over-Bumper,,Path planner,Speaker,Yes,,Yes,Both,Amp,Ground,Ground,No,Yes,
+4/4/2024 8:50:41,Apollo,324,Chips,Swerve,4,Over-Bumper,,C++,Speaker,Yes,"2.5 auto, close and midfield",Yes,Both,Amp,Ground,Ground,Sometimes,Yes,"Great people, camera may not work, can play defense"
+4/4/2024 8:50:44,Mercury,8732,Trinity force,Swerve,5,Under-Bumper,,Java,Speaker,Yes,,Yes,Speaker,Speaker,Ground,Ground,No,No,
+4/4/2024 8:51:06,Apollo,6488,Robo Rams,Tank,3,No Ground Pickup,,Java,None,Yes,,No,Amp,Amp,Source,Source,No,Yes,None
+4/4/2024 8:51:09,Apollo,4153,Project Y,Swerve,2,Under-Bumper,Leds... ,LabView,"Only speaker, but like kinda iffy... Guy said he was unsure ",Yes,"1 note, 2 notes is iffy... Overall not consistent. He said that they have different autos but they're all kinda bad?!",Yes,Speaker,Speaker,Ground,Ground,No,Yes,"Assuming nothing breaks scoring in speaker is pretty consistent. Lowkey vibe is not it. Not very confident, did not present robot well"
+4/4/2024 8:51:36,Apollo,5572,Rosbots,Swerve,4,Under-Bumper,,Java,Speaker,Yes,"Multiple autos, consists of 4 notes each",Yes,Both,Both,Both,Ground,No,Yes,
+4/4/2024 8:52:02,Mercury,3005,robochargers,Swerve,5,Under-Bumper,they said it’s pretty cool ,Java,Speaker,Yes,"six note auto, racing auto..?",Yes,Both,50/50 (they don’t have a preference),Ground,Ground,No,Yes,“14A is cool”
+4/4/2024 8:52:47,Mercury,7312,Tomball Robotics,Swerve,3,Over-Bumper,,Java,Speaker,Yes,4 note tested,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/4/2024 8:53:11,Mercury,3735,Vortx,Swerve,3,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Both,Ground,No,Yes,
+4/4/2024 8:53:41,Mercury,1477,Texas Torque,Swerve,4,Over-Bumper,,Java,Speaker,Yes,"main one is 5 note
+one preload, 3 up front, centerline grab one
+4 pc: preload and 3 up front as well",No,Both,Speaker,Both,Ground,Yes,Yes,harmony! we do it a lot
+4/4/2024 8:53:42,Apollo,6800,Valor,Swerve,5,Under-Bumper,,C++,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/4/2024 8:57:08,Mercury,9140,RoboBots,Swerve,3,Under-Bumper,,Java,Speaker,Yes,4 note auto looks extremly consistent through video,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/4/2024 8:57:32,Mercury,4639,Robo spartans,Swerve,3,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Both,Ground,No,Yes,
+4/4/2024 8:57:37,Mercury,8576,Golden Warrior Robotics,Swerve,4,Over-Bumper,,Java,Speaker,Yes,,No,Speaker,Speaker,Ground,Ground,No,Yes,
+4/4/2024 8:58:51,Apollo,8088,bionic panthers,Swerve,4,Under-Bumper,,Java,Speaker,Yes,5 notes,No,Both,Speaker,Ground,Ground,No,Yes,
+4/4/2024 9:00:16,Mercury,9136,rampage ,Swerve,2,Under-Bumper,it’s fast and cycle times are 10 seconds,Java,Speaker,Yes,versatile auto,Yes,Both,Speaker,Ground,Ground,No,Yes,amp signaling with lights (leds)
+4/4/2024 9:01:05,Apollo,9121,Mavericks,Swerve,3,Under-Bumper,,Java,Speaker,Yes,1,No,Amp not reliable but yes speaker,Speaker,Both,Doesn’t matter,No,Yes,
+4/4/2024 9:01:19,Mercury,9407,Heatwave,Swerve,5,Under-Bumper,,Java,None,No,,No,Both,Speaker,Ground,Ground,No,No,
+4/4/2024 9:01:54,Apollo,6645,Alloy Obsession,Tank,3,Source pickup,,Java,Speaker,Yes,,No,Both,Amp,Source,Source,No,Yes,
+4/4/2024 9:01:57,Mercury,9105,Technotalons,Swerve,4,Both,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/4/2024 9:03:33,Apollo,4206,Robo vikes,Swerve,3,Under-Bumper,L4 gears?? He says they make it quicker,Java,Can do both but prefer speaker ,Yes,Race into the center. 2 main auto 3 source side 4 amp side ,Yes,Both,No preference can score both,Ground,Ground,No,Yes,Very consistent hang next to trust. Shuttle pretty quick.
+4/4/2024 9:04:37,Mercury,3035,Driod rage,Swerve,3,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Amp,Ground,Ground,No,Yes,
+4/4/2024 9:04:41,Apollo,6768,Robojackets,Tank,4,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Amp,Ground,Ground,No,Yes,
+4/4/2024 9:05:25,Mercury,4641,Talon Inc.,Swerve,4,Under-Bumper,,Java,Both,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/4/2024 9:06:36,Apollo,7121,keller fusion robotics,Swerve,5,Over-Bumper,they use limelight to auto shoot with one button ,Java,Both,Yes,very flexible with auto (4-5 notes),Yes,Both,Amp,Both,Ground,No,Yes,"10-15 secs to hang, "
+4/4/2024 9:06:37,Apollo,9786,Wolf Pack,Tank,3,Sourced ,,Java,None,Yes,,No,Speaker,Speaker,Source,Source,Yes,No,
+4/4/2024 9:08:09,Mercury,8598,Electro Knights,Swerve,4,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/4/2024 9:08:28,Apollo,7155,Red Lion Bots,Tank,3,Source,,Java,None,Yes,,No,None,None,None,None,No,No,
+4/4/2024 9:10:17,Apollo,9080,Enigma,Swerve,4,Over-Bumper,,Java,Speaker,Yes,Only score preload and then drive past line,Yes,Both,Speaker,Ground,Ground,No,Yes,In endgame they finish their cycle and then go climb and they can harmonize. They cycle under stage
+4/4/2024 9:11:24,Apollo,7691,tsa all stars,Swerve,4,Under-Bumper,climbers are independent so they can harmonize easy and are fast amp scorers,Java,Speaker,Sometimes,“hopefully it gets improved”,Yes,Both,no preference ,Both,no preference ,No,Yes,2 drive teams and 10-15 notes in a game 
+,,,,,,,,,,,,,,,,,,,
+4/4/2024 9:14:11,Mercury,9752,Itkan Robotics,Swerve,5,Under-Bumper,,Java,Both,Yes,,Yes,Both,Both,Ground,Ground,No,Yes,Very fast climb
+4/4/2024 9:15:37,Apollo,8177,vector ,Swerve,5,Under-Bumper,new climb since this morning ,Java,Speaker,Yes,semi consistent 4 note auto (they said it’s wacky so idk),No,Both,no preference,Ground,Ground,No,Sometimes,they do not seem confident in the robot erm
+4/4/2024 9:16:20,Apollo,5212,Tamsformer,Swerve,4,Over-Bumper,"Intake is pretty solid, if hit can continue. Quick repairs ",C++,Speaker,Yes,"Guaranteed 2 note auto, 3 notes is reasonable ",Yes,Both,Depends on the alliance partners ,Ground,Ground,No,Sometimes,"Steel bellypan, good torque, L1 gear ratio, quick acceleration, note might get stuck"
+4/4/2024 9:17:30,Apollo,9054,Johnson City Joules,Tank,4,No Ground Pickup,,Java,Speaker,Yes,Score preload and then back up over the line. Can start from any of the 3 positions around subwoofer,No,Speaker,Speaker,Source,Source,No,Yes,Takes roughly 10-20 seconds to climb. Pretty much an everybot 
+4/4/2024 9:25:46,Mercury,4641,talon inc,Swerve,3,Under-Bumper,the frame got bent inward last comp,Java,Speaker,Yes,"22 notes, 4 note auto",Yes,Both,Speaker,Ground,Ground,No,Yes,"cool climb, their robot has been hit so much i feel bad"
+4/4/2024 9:29:53,Apollo,5414,Pearadox,Swerve,3,Under-Bumper,,Java,Both,Yes,Score up to 5 notes pretty consistently all into speaker,Yes,Both,Speaker,Ground,Ground,Yes,Yes,"Doesn't tip when fully extended, notes don't get stuck often, this robots first time in comp. Really easy to fix broken parts"
+4/4/2024 9:30:07,Mercury,5103,jargernauts,Swerve,4,Over-Bumper,“better than the last one”,Java,Speaker,Yes,,No,Speaker,no preference ,Both,Ground,No,Sometimes,"they had a problem with climbing so they increased tension, “it’s nice”"
+4/4/2024 9:37:38,Mercury,5411,robotalons,Swerve,5,Under-Bumper,bi directional intake,Java,Speaker,Yes,"four piece center and preload note, ",No,Both,no preference ,Ground,Ground,No,Yes,"they can harmonize, they can shoot on the move for speaker, super fast (go across the field in 2.5 seconds) 10 secs or less cycle times"
+4/4/2024 9:45:19,Mercury,7616,Cerberus,Swerve,2,Over-Bumper,"Very top heavy, entire intake and shooter is on a winch.",Java,Speaker,Yes,,Yes,Both,Amp,Ground,Ground,No,No,
+4/4/2024 9:45:28,Mercury,5503,tiger trons,Tank,2,Over-Bumper,cloth on top to let notes slide off,Java,Speaker,Yes,,No,amp is in progress but they can do speaker,Speaker,Ground,Ground,No,Yes,"they can harmonize, everything is neos"
+4/4/2024 9:48:19,Mercury,5829,awtybots,Swerve,4,Over-Bumper,it’s compact and low to the ground ,Java,Speaker,Yes,versatile bc they can run auto from all spots,Yes,Both,Amp,Ground,Ground,No,No,cycle times are 10
+4/4/2024 9:49:51,Mercury,9478,Robo-colts,Swerve,4,Under-Bumper,Looks like last year's robot,Java,Speaker,Yes,,Yes,Both,Speaker,Both,Ground,No,Yes,
+4/4/2024 9:54:24,Mercury,8370,Glow with the Flow,Tank,2,Under-Bumper,,Java,Both,Yes,,Yes,Both,no preference both cycles same time,Both,Ground,Yes,Yes,
+4/4/2024 9:55:16,Mercury,9492,ladytalons,Swerve,5,technically it’s in the bumper,,Java,Speaker,Yes,side auto,No,Both,no preference,Both,Ground,No,Yes,
+4/4/2024 9:59:25,Mercury,8507,Heritage Jaguar Robotics,Tank,3,No Ground Pickup,They have 2 bots,LabView,Speaker,Yes,,Yes,Speaker,Speaker,Source,Source,No,Yes,"A modified kitbot, team also has their own design but it is reportedly not shooting well so they will most likely be using this robot."
+4/4/2024 10:00:39,Mercury,8507,Heritage Jaguar Robotics,Swerve,3,Over-Bumper,They have 2 bots,LabView,Both,Yes,,Yes,Both,Amp,Both,Ground,No,Yes,Other design of 8507
+4/4/2024 10:19:52,Apollo,4192,Jaguar robotics ,Swerve,3,Over-Bumper,"110 pound without bumper, fairly fast, good at defense. L3 MK4 gear ratio for swerve",Java,Speaker,Yes,Consistent 4 note auto. Has variations,Yes,Both,No preference ,Ground,Ground,No,Sometimes,"Haven't tested climb, but was consistentish. Intake can survive some hits and is quickly fixable"

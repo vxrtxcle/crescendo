@@ -28,7 +28,7 @@ document_id = os.getenv("DOCUMENT_ID")
 SCOPES = ['https://www.googleapis.com/auth/documents.readonly']
 DOCUMENT_ID = document_id
 
-url = "https://www.thebluealliance.com/api/v3/event/2024txfor/teams/keys"
+url = "https://www.thebluealliance.com/api/v3/event/2024txcmp1/teams/keys"
 headers = {'X-TBA-Auth-Key': tba_key}
 response = requests.get(url, headers)
 req = response.json()
@@ -40,8 +40,6 @@ teams2.sort()
 for x in range(len(teams2)):
     teams2[x] = str(teams2[x]) + " - "
 teams2.remove("2468 - ")
-teams2.remove("2687 - ")
-teams2.remove("2689 - ")
 
 creds = None
 
@@ -81,6 +79,8 @@ except HttpError as err:
 
 parsed_values = teams2
 temp_array = teams2
+print(notes)
+print(teams2)
 string_length = len(notes)
 array_length = len(teams2)
 i = 0
@@ -92,11 +92,12 @@ for x in range(len(teams2)):
     y = notes.split(teams2[x])
     if x != len(teams2) - 1:
         z = y[1].split(teams2[x+1])
+        print(z)
         team_notes.append(z[0])
     else:
         team_notes.append(y[1])
 
-url = "https://www.thebluealliance.com/api/v3/event/2024txfor/teams/keys"
+url = "https://www.thebluealliance.com/api/v3/event/2024txcmp1/teams/keys"
 headers = {'X-TBA-Auth-Key': tba_key}
 response = requests.get(url, headers)
 req = response.json()
@@ -110,7 +111,7 @@ team_number = st.selectbox("Select Team", arr, format_func=lambda x: f"{x}")
 if team_number:
     st.title("Team #" + str(team_number))
     st.write("Qualitative Notes for Matches")
-    url = "https://www.thebluealliance.com/api/v3/team/" + "frc" + str(team_number) + "/event/2024txfor/matches/simple"
+    url = "https://www.thebluealliance.com/api/v3/team/" + "frc" + str(team_number) + "/event/2024txcmp1/matches/simple"
     response = requests.get(url, headers)
     req = response.json()
     matches = []
