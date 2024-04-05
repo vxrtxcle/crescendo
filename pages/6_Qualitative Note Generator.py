@@ -87,6 +87,7 @@ temp = teams2[0]
 count = 0
 team_notes = []
 temp = ""
+st.write(notes)
 for x in range(len(teams2)):
     y = notes.split(teams2[x])
     if x != len(teams2) - 1:
