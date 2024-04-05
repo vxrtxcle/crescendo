@@ -80,8 +80,6 @@ except HttpError as err:
 
 parsed_values = teams2
 temp_array = teams2
-#print(notes)
-#print(teams2)
 string_length = len(notes)
 array_length = len(teams2)
 i = 0
@@ -92,9 +90,9 @@ temp = ""
 for x in range(len(teams2)):
     y = notes.split(teams2[x])
     if x != len(teams2) - 1:
-        print(teams2[x])
+        st.write(teams2[x])
         z = y[1].split(teams2[x+1])
-        print(z)
+        st.write(z)
         team_notes.append(z[0])
     else:
         team_notes.append(y[1])
