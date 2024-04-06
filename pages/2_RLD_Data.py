@@ -9,7 +9,7 @@ load_dotenv(dotenv_path)
 tba_key = os.getenv('X_TBA_Auth_Key')
 from pathlib import Path
 st.title("RLD Data")
-url = "https://www.thebluealliance.com/api/v3/event/2024txfor/teams/keys"
+url = "https://www.thebluealliance.com/api/v3/event/2024txcmp1/teams/keys"
 headers = {'X-TBA-Auth-Key': tba_key}
 response = requests.get(url, headers)
 req = response.json()
@@ -25,8 +25,8 @@ if options:
     for x in options:
         edict = {'Match Number': [], 'Auto Speaker': [], 'Auto Speaker Miss': [], 'Tele Speaker': [],
                  "Tele Speaker Miss": [], 'Tele Amp': [], 'Tele Amp Miss': [], 'Drops': [], 'Endgame Stage': [],
-                 'DC': []}
-        with open("Fort Worth.json", 'r') as f:
+                 'DC': [], 'Rings Fed': []}
+        with open("State.json", 'r') as f:
             g = json.load(f)
             for y in g:
                 if int(y['team_#']) == int(x):
@@ -74,25 +74,29 @@ if options:
                         edict['DC'].append(1)
                     else:
                         edict['DC'].append(0)
-
-            for x in range(len(edict.keys())-3):
-                total = 0
-                klist = list(edict.keys())
-                for y in edict[klist[x]]:
-                    if y == 'Match Number':
-                        continue
+                    if y['tele_pass_source'] == None and y['tele_pass_midfield'] == None:
+                        edict['Rings Fed'].append(0)
+                    elif y['tele_pass_source'] == None and y['tele_pass_midfield'] != None:
+                        if isinstance(y['tele_pass_midfield'], int):
+                            edict['Rings Fed'].append(1)
+                        else:
+                            edict['Rings Fed'].append(len(y['tele_pass_midfield']))
+                    elif y['tele_pass_midfield'] == None and y['tele_pass_source'] != None:
+                        if isinstance(y['tele_pass_source'], int):
+                            edict['Rings Fed'].append(1)
+                        else:
+                            edict['Rings Fed'].append(len(y['tele_pass_source']))
                     else:
-                        min = 9999
-                        max = -9999
-                        if y < min:
-                            min = y
-                        elif y > max:
-                            max = y
-                        total += y
-                avg = total / len(edict[klist[x]])
-                edict[klist[x]].append(avg)
-                edict[klist[x]].append(max)
-                edict[klist[x]].append(min)
+                        temp7 = 0
+                        if isinstance(y['tele_pass_source'], int):
+                            temp7 += 1
+                        else:
+                            temp7 += len(y['tele_pass_source'])
+                        if isinstance(y['tele_pass_midfield'], int):
+                            temp7 += 1
+                        else:
+                            temp7 += len(y['tele_pass_midfield'])
+                        edict['Rings Fed'].append(temp7)
 
         st.subheader("Team #" + str(x))
         match_table = pd.DataFrame.from_dict(edict)

@@ -151,6 +151,10 @@ if team_number:
                     else:
                         continue
 
-
+if team_number:
+    st.title("Team #" + str(team_number))
+    key = str(team_number) + " - "
+    index = teams2.index(key)
+    st.write(team_notes[index])
 
 
