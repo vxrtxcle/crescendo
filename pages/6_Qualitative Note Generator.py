@@ -13,7 +13,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 import os.path
-dotenv_path = '../.env'
+dotenv_path = '.env'
 load_dotenv(dotenv_path)
 tba_key = os.getenv('X_TBA_Auth_Key')
 scopes = os.getenv("SCOPES")
