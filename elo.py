@@ -746,21 +746,39 @@ def convert_rld_to_tpw():
      #   file_data
 
 def qualitative_assignment():
-    url = "https://www.thebluealliance.com/api/v3/event/2024txfor/teams/keys"
+    url = "https://www.thebluealliance.com/api/v3/event/2024gal/teams/keys"
     headers = {'X-TBA-Auth-Key': tba_key}
     response = requests.get(url, headers)
     req = response.json()
     teams = []
     teams2 = []
+    arrays = ["Akash", "Arjun", "Ani", "Bjorn", "Ivy", "Sanaya", "Sara", "Shikhar"]
     for x in req:
         y = x.replace('frc', '')
-        teams.append(int(y))
-    url = "https://www.thebluealliance.com/api/v3/event/2024txfor/rankings"
+        url = "https://www.thebluealliance.com/api/v3/team/" + x + "/events/2024/simple"
+        headers = {'X-TBA-Auth-Key': tba_key}
+        response = requests.get(url, headers)
+        req = response.json()
+        z = y + "\t" + arrays[random.randint(0, 7)] + "\t"
+
+        for a in req:
+            if a['event_code'] != "cmptx" or a['event_code'] != "gal":
+                try:
+                    #print(a)
+                    z += a['city'] + " + "
+                except Exception as e:
+                    print(a)
+        teams.append(z)
+    teams.sort()
+    for x in teams:
+        print(x)
+    url = "https://www.thebluealliance.com/api/v3/event/2024gal/teams/keys"
     response = requests.get(url,headers)
     req = response.json()
     common = []
-    for x in req['rankings']:
-        print(x['team_key'].replace('frc',''))
+    for x in req:
+        url = "https://www.thebluealliance.com/api/v3/team/" + x +"/events/simple"
+        #print(x['city'])
 
     #print(teams)
 
@@ -768,7 +786,7 @@ def qualitative_assignment():
 #actual_skill()
 #raw_skill('2024txwac')
 #match_difficulty()
-generate_json()
+qualitative_assignment()
 '''
 {
 	"entries": [

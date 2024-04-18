@@ -13,7 +13,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 import os.path
-dotenv_path = '.env'
+dotenv_path = '../.env'
 load_dotenv(dotenv_path)
 tba_key = os.getenv('X_TBA_Auth_Key')
 scopes = os.getenv("SCOPES")
@@ -28,7 +28,7 @@ document_id = os.getenv("DOCUMENT_ID")
 SCOPES = ['https://www.googleapis.com/auth/documents.readonly']
 DOCUMENT_ID = document_id
 
-url = "https://www.thebluealliance.com/api/v3/event/2024txcmp1/teams/keys"
+url = "https://www.thebluealliance.com/api/v3/event/2024gal/teams/keys"
 headers = {'X-TBA-Auth-Key': tba_key}
 response = requests.get(url, headers)
 req = response.json()
@@ -92,13 +92,14 @@ for x in range(len(teams2)):
     y = notes.split(teams2[x])
     if x != len(teams2) - 1:
         #st.write(teams2[x])
+        print(teams2[x])
         z = y[1].split(teams2[x+1])
         #st.write(z)
         team_notes.append(z[0])
     else:
         team_notes.append(y[1])
 
-url = "https://www.thebluealliance.com/api/v3/event/2024txcmp1/teams/keys"
+url = "https://www.thebluealliance.com/api/v3/event/2024gal/teams/keys"
 headers = {'X-TBA-Auth-Key': tba_key}
 response = requests.get(url, headers)
 req = response.json()
@@ -112,7 +113,7 @@ team_number = st.selectbox("Select Team", arr, format_func=lambda x: f"{x}")
 if team_number:
     st.title("Team #" + str(team_number))
     st.write("Qualitative Notes for Matches")
-    url = "https://www.thebluealliance.com/api/v3/team/" + "frc" + str(team_number) + "/event/2024txcmp1/matches/simple"
+    url = "https://www.thebluealliance.com/api/v3/team/" + "frc" + str(team_number) + "/event/2024gal/matches/simple"
     response = requests.get(url, headers)
     req = response.json()
     matches = []
@@ -155,6 +156,7 @@ if team_number:
     st.title("Team #" + str(team_number))
     key = str(team_number) + " - "
     index = teams2.index(key)
-    st.write(team_notes[index])
+    if str(team_number) == '2468':
+        st.write(team_notes[index])
 
 

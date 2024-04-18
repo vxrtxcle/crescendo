@@ -1,0 +1,154 @@
+Timestamp,Division,Team Number (of the team you're scouting),Team Name (same idea as above),Weight (lbs),Drivebase,Type of Swerve?,Drive Motors,Vibe Check! (of robot not people),Over/Under Bumper Ground Pickup,Comments?,Programming Language,Scoring Ability (in auto),Leave Zone Auto?,Comments (about auto),Camera Usage? (to assist drivers),Scoring Ability (in teleop),Scoring Preference (in teleop),Pickup Ability,Pickup Preference,Can they score in trap?,Can they get onstage (hang)?,Final Comments
+4/17/2024 14:24:33,Galileo,1807,Redbird Robotics,124,Swerve,MAXSwerve,Kraken,4,Under-Bumper,,Java,5 piece auto,Yes,,No,Both,Speaker,Both,Ground,No,Yes,
+4/17/2024 14:27:24,Galileo,1923,The Midknight Inventors,124.5,Swerve,MK4i,Kraken,4,Over-Bumper,,"Didnt specify, guy didnt know","5 piece center subwoofer, 4 note source and amp side",Yes,,Yes,Both,Speaker,Both,Ground,Yes,Yes,"Can’t harmonize, nobody at pit but they had an faq"
+4/17/2024 14:33:29,Galileo,2122,Taters,123.8,Swerve,Modified SDS,Kraken,5,Under-Bumper,,Java,3-4 note speaker auto under stage,Yes,,Yes,Both,Both,Both,Ground,Yes,Yes,
+4/17/2024 14:35:53,Galileo,2637,Phantom catz,121,Swerve,MK4i,Kraken,4,Over-Bumper,,Java,Both,Yes,,Yes,Both,Both,Both,Ground,No,Yes,
+4/17/2024 14:38:37,Galileo,829,The digital goats,116,Swerve,MK4i,Kraken,4,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Both,Ground,No,Yes,
+4/17/2024 14:39:07,Galileo,8817,Buccaneer robotics,130,Swerve,MK4,Neo,5,Over-Bumper,,Java,2-3 note auto,Yes,,No,Both,Amp,Ground,Ground,No,Yes,
+4/17/2024 14:39:23,Galileo,461,West side Boiler Invasion,109.6,Swerve,MK4i,Neo,5,Under-Bumper,"19 ft/sec, L3+, config auto, ",Java,Speaker,Yes,Configurâble auto,Yes,Both,Quick at amp but like speaker,Ground,Ground,No,Yes,Climb  time = 1 sec
+4/17/2024 14:41:03,Galileo,9312,Nerd Spark,122.4,Swerve,MK4i,Krakens and falcons,5,Over-Bumper,,Java,"6 in middle, 4 on each side",Yes,,Yes,Both,Good at both,Ground,Ground,No,Yes,
+4/17/2024 14:41:40,Galileo,2638,Couldn’t see,116.8,Swerve,MK4i,Falcon,4,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Both,Ground,Ground,No,Yes,
+4/17/2024 14:43:04,Galileo,862,Lightning Robotics,143,Swerve,MK4i,Kraken Falcon,3,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 14:43:27,Galileo,548,robostangs,123,Swerve,MK4i,krakens,5,Both,,Java,Speaker,Yes,,Yes,Both,Amp,Both,no,No,Yes,7 second cycle times and 1 second climb
+4/17/2024 14:45:13,Galileo,868,Tech Hounds,117,Swerve,MK4i,Kraken,3,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker but can do both equal,Ground,Ground,No,Yes,
+4/17/2024 14:46:38,Galileo,670,homestead robotics,122 1/2,Swerve,MK4i,krakens,4,Over-Bumper,,Java,Both,Yes,,Yes,Both,both,Both,Ground,No,Sometimes,
+4/17/2024 14:51:51,Galileo,971,Spartan Robotics,124.5,Tank,Not Swerve,Kraken,2,Over-Bumper,,C++,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,Yes,Yes,
+4/17/2024 14:53:40,Galileo,5851,striking vikings,103,Swerve,MK4i,Falcon,5,Over-Bumper,,Java,Speaker,Yes,,No,Both,none,Ground,Ground,No,Yes,
+4/17/2024 14:57:11,Galileo,6081,Digital Dislocaters,89,Swerve,MK4i,Vortex,3,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Both,Ground,No,Yes,
+4/17/2024 14:57:27,Galileo,5951,MA,52 kilograms (they aren’t from us),Swerve,MK4i,Kraken,3,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Amp,Both,Ground,No,Yes,
+4/17/2024 15:01:41,Galileo,987,High Rollers,122,Swerve,MK4i,Kraken,5,Under-Bumper,,C++,Both,Yes,Smart auto where if there’s no note they can go for the other one autobomously,No,Both,Speaker,Both,Ground,Yes,Yes,
+4/17/2024 15:03:06,Galileo,424,Rust belt robotics ,125.4,Swerve,MK4,Neo,5,Under-Bumper,,Java,Speaker,Yes,,No,Both,Amp,Ground,Ground,No,Yes,
+4/17/2024 15:03:52,Galileo,324,Chips,117 without bumpers or battery,Swerve,MK4i,Falcon,3,Over-Bumper,,C++,Both,Yes,,No,Both,Amp,Ground,Ground,No,Yes,
+4/17/2024 15:06:22,Galileo,539,Titan robotics,105.9,Swerve,MK4i,Neo,5,Over-Bumper,,Java,Speaker,Yes,,No,Both,Speaker,Both,Ground,No,Yes,
+4/17/2024 15:07:00,Galileo,2337,Enginerds,122.6,Swerve,MK4i,Kraken,5,Under-Bumper,,Java,"5 note center,4 notes that start from source and amp side",Yes,,No,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 15:07:53,Galileo,1023,Bedford Express,123,Swerve,Level 3,Kraken,5,Over-Bumper,,Java,Both,Yes,,Yes,Both,Speaker,Ground,Ground,Yes,Yes,
+4/17/2024 15:14:35,Galileo,1241,Theory 6,122,Swerve,MK4,Kraken,5,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,Yes,Yes,
+4/17/2024 15:17:00,Galileo,3572,Wavelength,108,Swerve,MK4i,Neo,3,Over-Bumper,No comments,Java,Speaker,Yes,5 note that takes 3 close and the center preferred. Best one is a sneak auto that goes through the closest notes and goes to furthest notes.,Yes,Both,Amp,Both,Source,No,Yes,"Fast, score a lot and can get 12 cycles per match while defenders maybe 15 cycles undefended. Does shots from subwoofer and podium. Adjusts using cameras"
+4/17/2024 15:18:40,Galileo,324,Chips,117,Swerve,MK4i,Falcon,4,Over-Bumper,,C++,Speaker,Yes,,No,Both,Amp,Ground,Ground,No,Yes,Like staying in corner between amp and speaker with other robots feeding. Very effective at keeping amp full
+4/17/2024 15:20:35,Galileo,2056,OP Robotics,124,Swerve,MK4i,Talon/Falcon,5,Under-Bumper,,Java,5 note auto,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 15:22:59,Galileo,177,Bobcat Robotics,113,Swerve,MK4i,Falcon,3,Under-Bumper,,Java,Speaker,Yes,,No,Both,none,Ground,Ground,No,Yes,"consistent, only issue is under bumper intake can break, they have easy swraps"
+4/17/2024 15:24:44,Galileo,9478,Robo-colts,110,Swerve,MAXSwerve,Neo,4,Under-Bumper,No commemts,Java,Speaker,Yes,Goes under stage to take notes. 1 + 3 auto,Yes,Both,Speaker,Both,Ground,No,Yes,No comments
+4/17/2024 15:26:03,Galileo,5822,Wolf Byte,96,Swerve,MK4,Falcon,2,Over-Bumper,,Java,Speaker,Yes,,No,Both,Speaker,Both,nown,No,Yes,
+4/17/2024 15:28:56,Galileo,5484,Wolf Pack,97,Swerve,MK4,Neo,3,Under-Bumper,,Java,Speaker,Yes,,Yes,Speaker,Speaker,Ground,Ground,No,No,
+4/17/2024 15:33:26,Galileo,176,Aces High,123,Swerve,L4,Kraken,5,Under-Bumper,,Java,Speaker,Yes,,No,Both,Speaker,Both,Ground,No,Yes,"5 nite auto, autos on both sides"
+4/17/2024 15:34:19,Galileo,3990,Tech 4 Kids,119,Swerve,MK4i,Kraken,4,Over-Bumper,No comments,Java,Speaker,Yes,4 note from the side of the subwoofer. 2 from closest and 1 of the center notes. Depends on the alliance. Uses pathplanner. Simple auto to just shoot and get out of the way.,Yes,Both,Amp,Both,Ground,No,Yes,No comments
+4/17/2024 15:35:46,Galileo,245,Adambots,120,Swerve,MK4i,Neo,3,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,none,Ground,Ground,No,Yes,"very fast climb-1-2 secs, can harmonize, high chance of spotlighting"
+4/17/2024 15:37:38,Galileo,3928,Team Neutrino,98.6,Swerve,Swerve X,Neo,3,Under-Bumper,No comments,Java,Speaker,Yes,Closest pieces,Yes,Both,Whatever alliance needs ,Ground,Ground,No,Yes,First year swerve. 
+4/17/2024 15:40:10,Galileo,1540,The Flaming Chickens,115,Swerve,MK4,Falcon,4,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,depends on strategy,Ground,Ground,Yes,Yes,
+4/17/2024 15:40:46,Galileo,3683,DAVE,124.3,Swerve,MK4i,Kraken,5,Under-Bumper,No comments,Java,Speaker,Yes,Amp side 4 note auto preferred,Yes,Both,Speaker,Ground,Ground,Yes,Yes,No comments
+4/17/2024 15:43:37,Galileo,3604,Goon Squad,124.3,Swerve,MK4i,Kraken,4,Over-Bumper,No comments,Java,Speaker,Yes,5 piece from center,Yes,Both,Speaker,Ground,Ground,No,Yes,Drive really fast
+4/17/2024 15:43:59,Galileo,1577,Steampunk,119,Swerve,MK4i,Kraken,5,Under-Bumper,,Java,Both,Yes,,Yes,Both,Speaker,Both,Ground,No,Yes,
+4/17/2024 15:44:02,Galileo,1285,The big bang,124.1,Swerve,Swerve X,Kraken,3,Under-Bumper,,Java,Speaker,Yes,,No,Both,What ever,Ground,Ground,No,Yes,
+4/17/2024 15:47:17,Galileo,1732,Hilltopper,123,Swerve,MK4i,Falcon,4,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,equal ,Source,Source,Yes,Yes,
+4/17/2024 15:51:29,Galileo,6147,Tonkabots,124.6,Swerve,L3,Kraken,3,Over-Bumper,,Java,Speaker,Yes,,No,Both,Anything,Both,Ground,Yes,Yes,
+4/17/2024 15:51:58,Galileo,3005,Robochargers,106 without battery and bumpers ,Swerve,MAXSwerve,Vortex,5,Under-Bumper,Y’all know em,Java,Speaker,Yes,Hi,Yes,Both,Both,Ground,Ground,No,Yes,We like redbull
+4/17/2024 15:54:13,Galileo,6806,The Wild Reds,124,Swerve,Swerve X,Falcon,3,Over-Bumper,,Java,Speaker,Sometimes,,No,Speaker,Speaker,Ground,Ground,No,Yes,
+4/17/2024 15:57:29,Galileo,7558,Bay view Glen,123,Swerve,MK4,Kraken,5,Under-Bumper,,Java,Speaker,No,,No,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 15:59:05,Galileo,3322,Eagle evolution,119,Swerve,MAXSwerve,Vortex,4,Over-Bumper,Manual pivot that can be changed in between matches,Java,Speaker,Yes,4 piece 100% consistent 5 piece moderately inconsistent,No,Both,They alternate and are flexible,Both,Ground,Yes,Yes,None
+4/17/2024 16:01:21,Galileo,4907,thunder stamps,124.5,Swerve,MK4,Kraken,4,Under-Bumper,"trap and wing line, 3-5 note autos",Java,Speaker,Yes,3-5 notes,Yes,Both,Speaker,Ground,Ground,Yes,Yes,good team capable of doing anything from feeding to fast cycling 
+4/17/2024 16:03:53,Galileo,7762,auto pilots ,124,Swerve,Swerve X,Kraken,4,Over-Bumper,,Java,Speaker,Yes,,No,Both,Amp,Ground,Ground,No,Yes,"really good at amp, no electrical connection issues because of soldering, really good at harmony climb — been alliance captains "
+4/17/2024 16:07:15,Galileo,9692,Sigma,"53 kg, 65 with batteries and bumper ",Swerve,MAXSwerve,Neo,5,Under-Bumper,,Java,Amp,Yes,,No,Both,Amp,Ground,Ground,No,Yes,"use two telescopic tubes to hang — good harmony, rookie team"
+4/17/2024 16:10:36,Galileo,5112,the gongoliers,107,Swerve,MK4i,Kraken,3,Under-Bumper,robust with good Defense ,Java,Speaker,Yes,"versatile, 3 note working on 4",Yes,Both,Speaker,Ground,Ground,No,No,
+4/17/2024 16:10:53,Galileo,3018,Nordic storm,123.5,Swerve,Mk3 fast gearing ,Falcon,3,Under-Bumper,,Java,Speaker,Yes,,No,Both,Will do either depending on alliance,Ground,Ground,No,Yes,Use sensors in auto to be smarter(can see that a note has been picked up and will go to next instead)
+4/17/2024 16:14:02,Galileo,1296,Full Metal Jackets,108.5,Swerve,MK4,Falcon,5,Under-Bumper,,Java,Speaker,Yes,,No,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 16:14:30,Galileo,5114,titanium tigers,117,Swerve,MK4,Kraken,5,Under-Bumper,"buddy climb with distance shooting, passing ability ",Java,Speaker,Yes,4 notes any pos,Yes,Both,Speaker,Ground,Ground,No,Yes,under stage
+4/17/2024 16:15:24,Galileo,3464,Simcity ,120.6,Swerve,MK4i,Neo,1,Under-Bumper,,Java,Both,Yes,"Center- 4 note
+Source- 3 note
+Amp- 3.5 note ",Yes,Both,Depends on alliance,Ground,Ground,No,Yes,Very good at harmonizing. Auto aim
+4/17/2024 16:18:10,Galileo,4096,Ctrl-Z,124.7,Swerve,Swerve X,Kraken,5,Under-Bumper,,Python,Speaker,Yes,3-4 note auto,Yes,Speaker,Speaker,Ground,Ground,No,Yes,
+4/17/2024 16:19:16,Galileo,5414,pearadox,111,Swerve,MK4i,Kraken,4,Under-Bumper,,Java,Speaker,Yes,4 note auto everywhere,Yes,Both,Speaker,Ground,Ground,No,Sometimes,"far, consistent speaker shots"
+4/17/2024 16:19:16,Galileo,3467,Windham windup,111,Swerve,MK4i,Kraken,4,Under-Bumper,,Java,Speaker,Yes,"Center- 5.5
+Source- 3.5(very consistent)
+Has auto where they go to center and shoot all notes to their side",Yes,Both,Depends on alliance. slightly amp,Ground,Ground,Sometimes,Yes,Can harmonize well. Shooting on move. Note detection in autos. Can shoot form anywhere on the wing line 
+4/17/2024 16:21:19,Galileo,4122,Ossining Engineering Club,110,Swerve,MK4,Neo,5,Under-Bumper,,C++ and Java,Speaker,Yes,"1,2,3 and 4 note autos",Yes,Both,They do whatever the team needs,Ground,Ground,No,No,
+4/17/2024 16:24:02,Galileo,4143,Mars Wars,123,Swerve,Modded MK4,kraken,5,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,Yes,Yes,
+4/17/2024 16:26:45,Galileo,9462,Toefurs titans,87,Swerve,MK4,Vortex,2,Under-Bumper,,Java,Speaker,Yes,,No,Speaker and amp but amp sketch,Speaker,Both,Source,No,Yes,Have vortexes for swerve drive
+4/17/2024 16:27:28,Galileo,4561,Terror Bytes,109.7,Swerve,MK4i,Kraken,5,Under-Bumper,,Java,Speaker,Yes,4 note auto,Yes,Both,Amp,Ground,Ground,No,No,
+4/17/2024 16:31:27,Galileo,4655,Stateline Robotics,102,Swerve,MK4i,Neo,5,Over-Bumper,,Java,Speaker,Yes,1-3 note autos,No,Both,No preference,Ground,Ground,Yes,Yes,Have only ever missed one trap
+4/17/2024 16:36:37,Galileo,9586,Anglebotics ,70 without bummers and batteries ,Swerve,MK4,Kraken,5,Under-Bumper,,Java,Speaker,Yes,2 note auto,No,Both,Speaker,Ground,Ground,No,No,
+4/17/2024 16:36:59,Galileo,1676,Pascaci Pioneers,124.5,Swerve,Swerve X,Neo,3,Over-Bumper,,Java,Speaker,Yes,,No,Both,equal,Ground,Ground,Yes,Yes,
+4/17/2024 17:05:03,Galileo,5285,sea king robotics,112,Swerve,MK4i,Neo,5,Over-Bumper,solid,Java,Both,Yes,2.5 source ,Yes,Both,no preference ,Ground,Ground,No,No,kit bot
+4/17/2024 17:25:44,Galileo,2714,BBQ,118,Swerve,MAXSwerve,Vortex,5,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 17:31:00,Galileo,9404,Forge,113 + 5 for bumpers and battery,Swerve,MAXSwerve,Neo,4,Over-Bumper,,Java,Speaker,Yes,3 note,Yes,Both,No,Both,Ground,No,Yes,
+4/17/2024 17:33:37,Galileo,9408,War bots,124,Swerve,MK4i,Kraken,3,Under-Bumper,,Java,Speaker,Yes,,No,Both,No ,Ground,Ground,No,Yes,
+4/17/2024 17:34:57,Galileo,9450,Velocity raptors,117,Swerve,MK4i,Vortex,3,Over-Bumper,,Java,Amp,Yes,Only scores amp in auto,No,Amp,Amp,Both,Source,Sometimes,Yes,Amp only robot. Limelight on a swivel 
+4/17/2024 17:35:27,Galileo,343,Metal in Motion,99.2,Swerve,MAXSwerve,Neo,2,Under-Bumper,,Java,Speaker,Yes,,No,Both,Amp,Both,Ground,Yes,Yes,can pass well
+4/17/2024 17:38:49,Galileo,2826,Wave robotics,105,Swerve,MK4,Vortex,5,Under-Bumper,,Java,Speaker,Yes,,No,Both,Speaker,Ground,Ground,No,Yes,6 sec climb time
+4/17/2024 17:40:54,Galileo,1153,timberwolves,124.6,Swerve,MK4i,Neo,3,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 18:12:29,Galileo,2486,Coconuts,100,Swerve,MK4i,Falcon,4,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Doesn’t matter,Ground,Ground,Sometimes,Yes,
+4/17/2024 14:47:30,Milstein,67,The HOT team,120,Swerve,Swerve X,Kraken,5,Under-Bumper,,Java,Both,Yes,6 note,Yes,Both,Speaker,Ground,Ground,Yes,Yes,
+4/17/2024 15:19:04,Milstein,70,More Martians,124,Swerve,MK4,Falcon,3,Under-Bumper,,Java,Speaker,Yes,3 note auto,Yes,Both,No preference,Ground,Ground,Yes,Yes,
+4/17/2024 15:23:03,Milstein,78,Air Strike,101.9,Swerve,MK4,Neo,3,Under-Bumper,,Java,Speaker,Yes,4.5 note auto,Yes,Both,Mixed,Ground,Ground,No,Yes,Cycles 15 notes
+4/17/2024 16:53:08,Milstein,114,EagleStrike,114,Swerve,SDS L3 inverted modulus,Kraken,4,Over-Bumper,,C++,Both,Yes,5 note,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 14:40:22,Milstein,175,Buzz Robotics,123.5,Swerve,MK4i,Neo,3,Over-Bumper,,Java,Both,Yes,4 note center,No,Both,Speaker,Ground,Ground,No,Yes,Can harmonize
+4/17/2024 15:32:42,Milstein,179,Children of the Swamp,112,Swerve,Swerve X,Kraken,4,Over-Bumper,,Java,Speaker,Yes,5 notes aiming for a 6,Yes,Both,Speaker,Ground,Ground,Yes,Yes,For harmony has to be on chain first
+4/17/2024 14:55:49,Milstein,219,Team Impact,92.5,Swerve,MK4i,Falcon,4,Under-Bumper,,Java,Speaker,Yes,4.5 note,Yes,Speaker,Speaker,Ground,Ground,No,Yes,"Can hang on the end, super cool controller, super cool guy, 10 cycles per game"
+4/17/2024 14:58:54,Milstein,226,Hammerheads,103,Swerve,L3,Falcon,5,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,Yes,Yes,
+4/17/2024 14:40:59,Milstein,578,Red Raider Robots,120,Swerve,MK4i,Falcon,4,Under-Bumper,None,Java,Both,Yes,None,No,Both,No preference ,Ground,Ground,No,Yes,None
+4/17/2024 14:43:33,Milstein,604,Quixilver ,124,Swerve,Swerve X,Kraken,5,Under-Bumper,None,Java,Speaker,Yes,None,No,Both,None,Both,Ground,Yes,Yes,None 
+4/17/2024 14:48:57,Milstein,1058,Londonderry High School Robotics,120,Swerve,MK4i,Falcon,5,Under-Bumper,None ,Java,Both,Yes,None,Yes,Both,Amp,Ground,Ground,No,Yes,None 
+4/17/2024 15:19:00,Milstein,1114,Simbotics,125.5,Swerve,Swerve X,Kraken,4,Under-Bumper,,Java,Both,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 14:51:28,Milstein,1160,Titanium Robotics,124,Swerve,L2,Kraken,3,Over-Bumper,,Java,Speaker,Yes,,Yes,Speaker,Speaker,Ground,Ground,No,Yes,
+4/17/2024 14:53:35,Milstein,1288,Raven Robotics ,115,Swerve,MAXSwerve,Neo,3,Both,,Java,Speaker,Yes,,No,Speaker,Speaker,Both,Ground,No,Yes,
+4/17/2024 14:38:14,Milstein,1318,Issaquah Robotics Society,135,Swerve,MK4i,Kraken,4,Over-Bumper,,Java,And trap,Yes,,No,Both,Speaker,Ground,Ground,Yes,Yes,
+4/17/2024 15:16:43,Milstein,1391,Metal Moose,104,Swerve,MK4i,Kraken,4,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Both,Ground,No,Yes,
+4/17/2024 14:56:14,Milstein,1410,The Kraken,115.6,Swerve,SDS,Kraken,4,Both,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 14:53:02,Milstein,1458,Redtie Robotics,78,Swerve,Neo,Neo,4,Under-Bumper,,Does not know,Both,No,,No,Both,Speaker,Ground,Ground,No,No,
+4/17/2024 14:28:32,Milstein,1501,Team THRUST,120.5,Swerve,MK4i,Vortex,5,Over-Bumper,,Java,Both,Yes,,Yes,Both,Both ,Ground,Ground,Yes,Yes,
+4/17/2024 14:33:50,Milstein,1533,Triple Strange,120,Swerve,MK4i,Kraken,4,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Shuttles,Ground,Ground,No,Yes,
+4/17/2024 15:14:11,Milstein,1591,Greece Gladiators,124.6,Swerve,Rev,Neo,3,Under-Bumper,,Javascript,Speaker,Yes,,No,Both,Speaker,Both,Ground,Sometimes,Yes,
+4/17/2024 15:52:08,Milstein,1727,Rex,123,Swerve,MAXSwerve,Vortex,5,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Both,Ground,Sometimes,Yes,
+4/17/2024 15:56:07,Milstein,1730,Team Driven,99.3,Swerve,MK4i,Kraken,4,Over-Bumper,,Java,Speaker,Yes,1-4 note autos,Yes,Both,no pref,Ground,Ground,No,Yes,
+4/17/2024 15:08:09,Milstein,1731,Frester valley robotics,104,Swerve,MK4i,Kraken,5,Under-Bumper,"Trap, confident, 10 ti 12 decound cycle",Java,Both,Yes,6 note,Yes,Both,Amp,Both,Ground,Yes,Yes,Really solid robot overall!
+4/17/2024 15:11:22,Milstein,2073,Eagle force,119.3,Swerve,Swerve X,Kraken,3,Over-Bumper,,Java,Both,Yes,3 note source side and 4 note center,Yes,Both,Speaker,Both,Ground,Yes,Yes,
+4/17/2024 18:20:32,Milstein,2338,Gear It Forward,124.3,Swerve,MK4,Falcon,4,Under-Bumper,,Java,Speaker,Yes,5 note auto,Yes,Both,None,Ground,Ground,Yes,Yes,10 to 11 notes cycle
+4/17/2024 15:15:35,Milstein,2522,Lord forquad,111,Swerve,MK4i,Kraken,4,Over-Bumper,,Java,Speaker,Yes,4 note auto,Yes,Both,Speaker,Both,Ground,No,Yes,8 to 9 second tele-op
+4/17/2024 15:18:12,Milstein,2609,BeaverWorx,115,Swerve,Based of MK4I,Kraken,5,Under-Bumper,,Java,Speaker,Yes,3ish robots,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 14:29:36,Milstein,2611,Jack town Vectors,115?,Swerve,MK4i,Kraken,5,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Both,Ground,No,Yes,
+4/17/2024 14:26:07,Milstein,2614,Mars,106,Swerve,MK4i,Kraken,4,Over-Bumper,Cool Guys had a sheet,Java,Both,Yes,"5 piece with 1 from center, 4 piece speaker side, 4 piece amp side for exceptional scoring potential ",Yes,Both,Like both equally,Ground,Ground,Yes,Yes,Super cool guys didn’t have robot with them 
+4/17/2024 14:41:23,Milstein,2713,Redhawk Robotics,123.4,Swerve,MK4i,Kraken,3,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,No robot with them
+4/17/2024 14:44:27,Milstein,2930,Sonic Squirrels,124.5,Swerve,MK4i,Kraken,5,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,Yes,Yes,
+4/17/2024 14:47:27,Milstein,2987,Rogue Robotics,123.5,Swerve,MK4i,Neo,5,Under-Bumper,,C++,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 14:58:40,Milstein,3075,Hadream Team,125,Swerve,Looks like mk4i but is custom,Falcon,4,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,No prefence,Ground,Ground,Yes,Yes,Israeli very bice
+4/17/2024 14:53:21,Milstein,3341,Option 16,124.1,Swerve,MK4i,Neo,4,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Both,Source,No,Yes,
+4/17/2024 18:29:07,Milstein,3534,House of Cards,123.9,Swerve,MK4,Falcon,3,Under-Bumper,4 sided intake,Java,Speaker,Yes,"4 note, has a 5 Hail Mary ",Yes,Speaker,Speaker,Ground,Ground,No,Yes,"11 average, likes to be cleaner "
+4/17/2024 15:11:36,Milstein,3539,Byting bulldogs ,121.1,Swerve,Westcoast ,Kraken,5,Under-Bumper,Sturdy can defense mostly offesive,Java,Both,Yes,5 notes auto,Yes,Both,Speaker,Ground,Ground,No,Yes,None
+4/17/2024 15:07:57,Milstein,3544,Spartiates ,103,Swerve,MK4,Neo,4,Under-Bumper,Very sturdy durable,Java,Both,Yes,3 notes + 4 notes,Yes,Both,Speaker,Both,Ground,No,Yes,"Auto amp calibration, can score in the amp from anywhere bc of programming and camera"
+4/17/2024 15:31:38,Milstein,3545,House of cards,151,Swerve,L2,Falcon,4,Under-Bumper,"Very sturdy, great defense, 4 sided intake",Java,Speaker,Yes,"“Customizable autos” have 3/4 note reliable, 5 note somewhat reliable",Yes,Speaker,Speaker,Ground,Ground,No,Yes,Shoot from anywhere I. Front of the podium
+4/17/2024 14:51:08,Milstein,4063,Trikzr4kidz,97.5 lbs,Swerve,Swerve X,Kraken,5,Under-Bumper,Feeding type robot and 4 note auto,Java,Speaker,Yes,4 note,Yes,Launch to mid prefer speaker,Speaker,Ground,Ground,No,Yes,None
+4/17/2024 15:02:04,Milstein,4125,Confidential,119 with bunper,Swerve,MK4i,Kraken,5,Under-Bumper,Can do eevrything,Java,Speaker,Yes,4 note consistent,Yes,Both,"Depends on alliance, prefer amp",Ground,Ground,No,Yes,None
+4/17/2024 14:55:12,Milstein,4285,Camobots,119,Swerve,MK4,Neo,4,Under-Bumper,Great defense,Java,Speaker,Yes,4-note very consistent,Yes,Both,Speaker,Both,Ground,No,No,"Very great for d, bc tall"
+4/17/2024 14:58:38,Milstein,4322,Clockwork,121 wo bumpers ,Swerve,MK4i,Kraken,4,Over-Bumper,Prefer pickup from source,Java,Prefer speaker but both,Yes,4 note auto,No,Both,Speaker,Both,Ground,No,No,Defense good
+4/17/2024 16:29:32,Milstein,4400,Cerbotics,120,Swerve,Swerve X,Kraken,4,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 16:49:12,Milstein,4501,Humans,93,Swerve,MK4i,Kraken,3,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 14:46:14,Milstein,4630,The Robodragons,80,Swerve,Swerve X,Mk4,4,Over-Bumper,,Java,Speaker,Yes,2 Note Auto,Yes,Speaker,Speaker,Both,Ground,No,Yes,
+4/17/2024 14:56:50,Milstein,5417,Eagle Robotics,97,Swerve,MK4,Neo,5,Over-Bumper,,Java,Speaker,Yes,3 Note Auto,Yes,Both,Amp,Both,Ground,Yes,No,
+4/17/2024 15:03:17,Milstein,5427,Steel Talons,120,Swerve,MK4,Kraken,4,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 16:31:04,Milstein,5461,VERN,118,Swerve,Swerve X,Neo,4,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 16:38:10,Milstein,5712,Gray Matter,124,Swerve,MK4i,Kraken,5,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,Amp,Both,Ground,Yes,Yes,
+4/17/2024 14:27:47,Milstein,5885,WiredCats,121,Swerve,MK4i,Neo,5,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Both,Ground,Ground,No,Yes,
+4/17/2024 14:34:36,Milstein,5892,Energy heroes,91.4,Swerve,Sdsl2,Neo,3,Over-Bumper,,Java,Speaker,Yes,Have 5 not auto,Yes,Both,Speaker,Ground,Ground,No,Yes,"14 second hang, 10 second cycle"
+4/17/2024 14:40:02,Milstein,6329,Dial,124.3,Swerve,MK4i,Kraken,4,Under-Bumper,,Pathplanner,Speaker,Yes,6 note auto,Yes,Both,Speaker,Ground,Ground,No,Yes,"10 second cycle, 1-2 hang time"
+4/17/2024 14:42:19,Milstein,6413,Arnold,108,Swerve,MK4,Kraken,5,Both,,Java,Speaker,Yes,,Yes,Both,Both,Both,Ground,No,No,10 second cycle 
+4/17/2024 14:46:27,Milstein,6459,robotik,56 kg,Swerve,MK4i,Kraken,5,Both,,Java,Both,Yes,,No,Both,Speaker,Both,Source,No,Yes,"No harmony, 5 or less second hang time, not known cycle time"
+4/17/2024 14:50:01,Milstein,6586,Teskan vaudets,121,Tank,None,Neo,3,Under-Bumper,,Java,Speaker,Yes,,No,Both,Amp,Ground,Ground,No,Sometimes,"6-10 sec cycle time, new hang around 2 sec hang time"
+4/17/2024 14:13:20,Milstein,6800,Valor,124.3,Swerve,Swerve X,Kraken,5,Under-Bumper,Front and Back intake,C++,Speaker,Yes,Has a 4.5 auto,Yes,Both,No preference,Ground,Ground,No,Yes,“Our robot is good” robot name flat line
+4/17/2024 14:42:44,Milstein,6800,Valor,124.3,Swerve,Swerve X,Kraken,4,Under-Bumper,,C++,Speaker,Yes,,Yes,Both,No preference ,Both,No preference ,No,Yes,
+4/17/2024 15:10:04,Milstein,6902,Strike,75,Tank,Not Swerve,CIM,3,Over-Bumper,,Java,None,Yes,,No,"None, shoot the notes in the team area",None,Both,Source,No,Yes,"Portuguese robot, recyclable materials "
+4/17/2024 14:56:46,Milstein,7428,Gigawatts,123.7,Swerve,MK4i,Falcon,4,Under-Bumper,,Java,Speaker,Yes,1 note auto ,Yes,Both,Amp,Ground,Just ground ,No,Yes,Offset shooter
+4/17/2024 14:50:56,Milstein,7472,Charger robotics,116,Swerve,MK4,Falcon,4,Under-Bumper,,C++,Speaker,Yes,4.5 note auto is MAX,Yes,Both,Speaker,Ground,Can’t pick up from source,No,Yes,
+4/17/2024 14:59:58,Milstein,7763,Cooper roborics ,78.9,Swerve,Nei,Neo,4,Under-Bumper,,Java,Speaker,Yes,5 note auto max preferred 4,Yes,Both,Both depending on situation,Ground,Only ground ,No,No,
+4/17/2024 14:23:17,Milstein,8019,Patriot engineering,117 132(with bumpers and battery),Swerve,MK4,Falcon,4,Over-Bumper,None,Java,Speaker,Yes,4 note auto,Yes,Both,Depends on strategy,Ground,Ground,No,Yes,None
+4/17/2024 14:30:36,Milstein,8033,Highlander robots,124.1,Swerve,MK4i,Kraken,4,Under-Bumper,,Java,Speaker,Yes,3-5 note auto,Yes,Both,Depends on alliance,Ground,Ground,No,Yes,
+4/17/2024 14:40:04,Milstein,8840,Bay Robotics,120,Swerve,MK4i,Neo,3,Over-Bumper,,Java,Speaker,Yes,,No,Both,Amp,Ground,Ground,No,No,
+4/17/2024 16:20:28,Milstein,9431,Snider robotics,148.3,Tank,Not Swerve,CIM,3,No Ground Pickup,,C++,Speaker,Yes,One note auto and unmodified everybot,Yes,Both,No preference,Source,Source,No,Yes,Very powerful shooter
+4/17/2024 14:40:09,Milstein,9452,Lhs steel stingers,124,Swerve,MK4i,Neo,3,Under-Bumper,,Java,Speaker,Yes,,No,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 14:45:43,Milstein,9458,Sesi Senai ,55kg,Swerve,MAXSwerve,Neo,3,Over-Bumper,,Java,Speaker,Yes,,Yes,Both,DM,Both,Ground,No,Yes,
+4/17/2024 15:31:11,Milstein,9483,Wilo Cats,45kg,Swerve,MK4i,Falcon,4,Over-Bumper,,Java,Both,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 14:21:15,Milstein,9498,Zenshin Robotics,83.67 lbs,Tank,Not Swerve,Neo,3,Under-Bumper,From the back,Java,Speaker,Yes,Can shoot two in middle,No,Speaker,Speaker,Both,Ground,No,No,"Consistent, never broke, passer, not much drive practice since week 6"
+4/17/2024 14:56:32,Milstein,9535,The Knack,140,Swerve,MK4i,Neo,4,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Amp,Ground,Ground,Yes,Yes,
+4/17/2024 14:47:07,Milstein,9636,Space Junk,100,Swerve,Rev Neo,Neo,2,Under-Bumper,,Java,Amp,No,They have not finished it yet ,Yes,Amp,Amp,Ground,Ground,No,Sometimes,
+4/17/2024 15:23:47,Milstein,9764,Maratime mauraders,94 eatsomated,Tank,Not Swerve,CIM,1,Under-Bumper,,Java,Speaker,Yes,2 note auto goal,No,Speaker,Speaker,Both,Ground,No,No,
+4/17/2024 18:37:32,Milstein,6217,Bomb Botz,123,Swerve,MK4i,Neo,3,Under-Bumper,,Java,Speaker,Yes,4 note,Yes,Both,No,Ground,Ground,No,Yes,"10 notes cycle, cleaner bot"
+4/17/2024 19:00:35,Galileo,876,Thunder robotics,116,Swerve,MK4,Kraken,3,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Speaker,Ground,Ground,No,Yes,
+4/17/2024 19:05:14,Galileo,6002,Zoobotics,97,Swerve,Don't know,Neo,4,Under-Bumper,,Java,Speaker,Yes,,Yes,Both,Amp,Ground,Ground,Yes,Yes,

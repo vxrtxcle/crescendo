@@ -16,13 +16,13 @@ from PIL import Image
 #data_path = Path(__file__).parents[1] / "Data Set.csv"
 
 #pit_data = pd.read_csv('pit.csv')
-pit_state_data = pd.read_csv('pit-state.csv')
+pit_state_data = pd.read_csv('pit-worlds.csv')
 #dataset_data = pd.read_csv('Data Set.csv')
 
 y = pit_state_data["Team Number (of the team you're scouting)"]
-div = pit_state_data["Divisions"].unique()
+div = pit_state_data["Division"].unique()
 division = st.selectbox("Select Division", div, format_func=lambda x: f"{x}")
-div_team = pit_state_data['Divisions']
+div_team = pit_state_data['Division']
 z = []
 for x in range(len(y)):
     if str(div_team[x]) == division:
@@ -36,7 +36,7 @@ image_column_name = "Photo (clear view; no people blocking please; MAKE SURE THE
 st.subheader("Pit Scouting")
 filtered_pit_data = pit_state_data[pit_state_data["Team Number (of the team you're scouting)"] == team_number]  # Placeholder for team selection, adapt if needed
 st.write("General")
-st.table(filtered_pit_data[["Drivebase", "Programming Language", "Camera Usage? (to assist drivers)",
+st.table(filtered_pit_data[["Drivebase", "Type of Swerve?", "Drive Motors", "Weight (lbs)", "Programming Language", "Camera Usage? (to assist drivers)",
                                 'Over/Under Bumper Ground Pickup']])
 st.write("Auto")
 st.table(filtered_pit_data[["Leave Zone Auto?", "Scoring Ability (in auto)"]])
@@ -47,9 +47,8 @@ st.table(filtered_pit_data[['Can they score in trap?', 'Can they get onstage (ha
 st.write("Comments")
 st.table(filtered_pit_data[['Final Comments', 'Comments (about auto)', 'Comments?']])
 
-df = pd.read_csv('pit-photos-state.csv')
-image_column_name = "Photo (clear view; no people blocking please; MAKE SURE THE ROBOT MATCHES WITH THE NUMBER YOU PUT ABOVE)"
-
+df = pd.read_csv('pit-worlds-photos.csv')
+image_column_name = "Photo (clear view; no people blocking please; MAKE SURE THE ROBOT MATCHES WITH THE NUMBER YOU PUT ABOVE; also at least 2 different sides of the robot please, best if all 4 sides)"
 filtered_df = df[df["Team Number (OF THE TEAM YOU'RE TAKING THE PICTURE OF)"] == team_number]
 
 # Make image viewable
